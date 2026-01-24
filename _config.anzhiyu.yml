@@ -1052,13 +1052,13 @@ home_top:
   subTitle: 万物可爱。
   siteText: anheyu.com
   category:
-    - name: 前端
-      path: /categories/前端开发/
+    - name: Adobe
+      path: /categories/Adobe/
       shadow: var(--anzhiyu-shadow-blue)
       class: blue
       icon: anzhiyu-icon-dove
-    - name: 大学
-      path: /categories/大学生涯/
+    - name: Canva
+      path: /categories/Canva/
       shadow: var(--anzhiyu-shadow-red)
       class: red
       icon: anzhiyu-icon-fire
@@ -1340,5 +1340,6 @@ CDN:
     # ali_iconfont_css:
     # accesskey_js:
     # colorthief:
+
 
 
