@@ -71,18 +71,18 @@ social:
 
 # 作者卡片 状态
 author_status:
-  enable: false
+  enable: true
   # 可以是任何图片，建议放表情包或者emoji图片，效果都很好，[表情包速查](https://emotion.xiaokang.me/)
   statusImg: "https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png"
   skills:
-    # - 🤖️ 数码科技爱好者
-    # - 🔍 分享与热心帮助
-    # - 🏠 智能家居小能手
-    # - 🔨 设计开发一条龙
-    # - 🤝 专修交互与设计
-    # - 🏃 脚踏实地行动派
-    # - 🧱 团队小组发动机
-    # - 💢 壮汉人狠话不多
+     - 🤖️ 数码科技爱好者
+     - 🔍 分享与热心帮助
+     - 🏠 智能家居小能手
+     - 🔨 设计开发一条龙
+     - 🤝 专修交互与设计
+     - 🏃 脚踏实地行动派
+     - 🧱 团队小组发动机
+     - 💢 壮汉人狠话不多
 
 # search (搜索)
 # --------------------------------------
@@ -140,7 +140,7 @@ favicon: /favicon.ico
 # Avatar (头像)
 avatar:
   img: https://bu.dusays.com/2023/04/27/64496e511b09c.jpg
-  effect: false
+  effect: true
 
 # Disable all banner image
 disable_top_img: false
@@ -157,11 +157,11 @@ cover:
   aside_enable: true
   archives_enable: true
   # the position of cover in home page (封面显示的位置)
-  # left/right/both
+  # 三个值可配置 left , right , both
   position: left
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
   default_cover:
-    # - /img/default_cover.jpg
+    - /img/default_cover.jpg
 
 # Replace Broken Images (替换无法显示的图片)
 error_img:
@@ -191,7 +191,7 @@ post_meta:
 
 # 主色调相关配置
 mainTone:
-  enable: false # true or false 文章是否启用获取图片主色调
+  enable: true # true or false 文章是否启用获取图片主色调
   mode: api # colorthief/cdn/api/both colorthief模式为前端获取图片主色调，cdn模式为图片url+imageAve参数获取主色调，api模式为请求API获取主色调，both模式会先请求cdn参数，无法获取的情况下将请求API获取，可以在文章内配置main_color: '#3e5658'，使用十六进制颜色，则不会请求colorthief/cdn/api/both获取主色调，而是直接使用配置的颜色
   # 项目地址：https://github.com/anzhiyu-c/img2color-go
   api: https://img2color-go.vercel.app/api?img= # mode为api时可填写
@@ -271,20 +271,20 @@ related_post:
   date_type: created # or created or updated 文章日期显示创建日或者更新日
 
 # figcaption (图片描述文字)
-photofigcaption: false
+photofigcaption: true
 
-# post_pagination (分页)
-# value: 1 || 2 || 3 || 4 || false
-# 1: The 'next post' will link to old post
-# 2: The 'next post' will link to new post
+ #post_pagination (分页)
+ #value: 1 || 2 || 3 || 4 || false
+ #1: The 'next post' will link to old post
+ #2: The 'next post' will link to new post
 # 3: 只有下一篇，并且只在文章滚动到评论区时显示下一篇文章(旧文章)
-# 4: 只有下一篇，并且只在文章滚动到评论区时显示下一篇文章(旧文章) 显示图片cover
-# false: disable pagination
+ 4: 只有下一篇，并且只在文章滚动到评论区时显示下一篇文章(旧文章) 显示图片cover
+ false: disable pagination
 post_pagination: 2
 
 # Displays outdated notice for a post (文章过期提醒)
 noticeOutdate:
-  enable: false
+  enable: true
   style: flat # style: simple/flat
   limit_day: 365 # When will it be shown
   position: top # position: top/bottom
@@ -303,7 +303,7 @@ sharejs:
 # AddToAny
 # https://www.addtoany.com/
 addtoany:
-  enable: false
+  enable: true
   item: facebook,twitter,wechat,sina_weibo,email,copy_link
 
 # Comments System
@@ -428,8 +428,8 @@ footer:
     since: 2020
   custom_text:
   runtime:
-    enable: false
-    launch_time: 04/01/2021 00:00:00 # 网站上线时间
+    enable: true
+    launch_time: 01/20/2026 00:00:00 # 网站上线时间
     work_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-上班摸鱼中.svg
     work_description: 距离月入25k也就还差一个大佬带我~
     offduty_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.4/img/badge/安知鱼-下班啦.svg
@@ -437,7 +437,7 @@ footer:
   # 徽标部分配置项 https://shields.io/
   # https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr
   bdageitem:
-    enable: false
+    enable: true
     list:
       - link: https://hexo.io/ #徽标指向网站链接
         shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg #徽标API
@@ -445,46 +445,46 @@ footer:
       - link: https://hexo.anheyu.com/
         shields: https://npm.elemecdn.com/anzhiyu-theme-static@1.0.9/img/Theme-AnZhiYu-2E67D3.svg
         message: 本站使用AnZhiYu主题
-      # - link: https://www.dogecloud.com/
-      #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg
-      #   message: 本站使用多吉云为静态资源提供CDN加速
-      # - link: https://github.com/
-      #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg
-      #   message: 本站项目由Github托管
-      # - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
-      #   shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg
-      #   message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
+      - link: https://www.dogecloud.com/
+        shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/CDN-多吉云-3693F3.svg
+        message: 本站使用多吉云为静态资源提供CDN加速
+      - link: https://github.com/
+        shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Source-Github.svg
+        message: 本站项目由Github托管
+      - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
+        shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg
+        message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
   socialBar:
-    enable: false
+    enable: true
     centerImg:
     left:
-      # - title: email
-      #   link: mailto:anzhiyu-c@qq.com
-      #   icon: anzhiyu-icon-envelope
-      # - title: 微博
-      #   link: https://weibo.com/u/6378063631
-      #   icon: anzhiyu-icon-weibo
-      # - title: facebook
-      #   link: https://www.facebook.com/profile.php?id=100092208016287&sk=about
-      #   icon: anzhiyu-icon-facebook1
-      # - title: RSS
-      #   link: atom.xml
-      #   icon: anzhiyu-icon-rss
+       - title: email
+         link: mailto:anzhiyu-c@qq.com
+         icon: anzhiyu-icon-envelope
+       - title: 微博
+         link: https://weibo.com/u/6378063631
+         icon: anzhiyu-icon-weibo
+       - title: facebook
+         link: https://www.facebook.com/profile.php?id=100092208016287&sk=about
+         icon: anzhiyu-icon-facebook1
+       - title: RSS
+         link: atom.xml
+         icon: anzhiyu-icon-rss
     right:
-      # - title: Github
-      #   link: https://github.com/anzhiyu-c
-      #   icon: anzhiyu-icon-github
-      # - title: Bilibili
-      #   link: https://space.bilibili.com/372204786
-      #   icon: anzhiyu-icon-bilibili
-      # - title: 抖音
-      #   link: https://v.douyin.com/DwCpMEy/
-      #   icon: anzhiyu-icon-tiktok
-      # - title: CC
-      #   link: /copyright
-      #   icon: anzhiyu-icon-copyright-line
+       - title: Github
+         link: https://github.com/anzhiyu-c
+         icon: anzhiyu-icon-github
+       - title: Bilibili
+         link: https://space.bilibili.com/372204786
+         icon: anzhiyu-icon-bilibili
+       - title: 抖音
+         link: https://v.douyin.com/DwCpMEy/
+         icon: anzhiyu-icon-tiktok
+       - title: CC
+         link: /copyright
+         icon: anzhiyu-icon-copyright-line
   list:
-    enable: false
+    enable: true
     randomFriends: 3
     project:
       # - title: 服务
@@ -503,14 +503,14 @@ footer:
       #       link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
       #     - title: 更新日志
       #       link: /update/
-      # - title: 导航
-      #   links:
-      #     - title: 即刻短文
-      #       link: /essay/
-      #     - title: 友链文章
-      #       link: /fcircle/
-      #     - title: 留言板
-      #       link: /comments/
+       - title: 导航
+         links:
+           - title: 即刻短文
+             link: /essay/
+           - title: 友链文章
+             link: /fcircle/
+           - title: 留言板
+             link: /comments/
       # - title: 协议
       #   links:
       #     - title: 隐私协议
@@ -523,7 +523,7 @@ footer:
     enable: true
     authorLink: /
     cc:
-      enable: false
+      enable: true
       link: /copyright
     linkList:
       - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
@@ -533,7 +533,7 @@ footer:
       # - link: https://beian.miit.gov.cn/
       #   text: 湘ICP备-xxxxxxx号
     subTitle:
-      enable: false
+      enable: true
       # Typewriter Effect (打字效果)
       effect: true
       # Effect Speed Options (打字效果速度参数)
@@ -543,15 +543,15 @@ footer:
       # loop (循环打字)
       loop: true
       # source 调用第三方服务
-      # source: false 关闭调用
-      # source: 1  调用一言网的一句话（简体） https://hitokoto.cn/
-      # source: 2  调用一句网（简体） http://yijuzhan.com/
-      # source: 3  调用今日诗词（简体） https://www.jinrishici.com/
+       source: true #关闭调用
+       source: 1  #调用一言网的一句话（简体） https://hitokoto.cn/
+       source: 2  #调用一句网（简体） http://yijuzhan.com/
+       source: 3  #调用今日诗词（简体） https://www.jinrishici.com/
       # subtitle 会先显示 source , 再显示 sub 的内容
       source: 1
       # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
       sub:
-        # - 生活明朗&#44; 万物可爱&#44; 人间值得&#44; 未来可期.
+         - 生活明朗&#44; 万物可爱&#44; 人间值得&#44; 未来可期.
 
 # Analysis
 # --------------------------------------
@@ -798,7 +798,7 @@ aside:
   enable: true
   hide: false
   button: true
-  mobile: true # display on mobile
+  mobile: true  # display on mobile
   position: right # left or right
   display: # 控制对应详情页面是否显示侧边栏
     archive: true
@@ -806,7 +806,7 @@ aside:
     category: true
   card_author:
     enable: true
-    description: # <div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">产品、设计、开发</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div> # 默认为站点描述
+    description:  <div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">产品、设计、开发</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div> # 默认为站点描述
     name_link: /
 
   card_announcement:
@@ -832,8 +832,8 @@ aside:
     color: false
     sort_order: # Don't modify the setting unless you know how it works
     highlightTags:
-      # - Hexo
-      # - 前端
+       - Hexo
+       - 前端
   card_archives:
     enable: true
     type: monthly # yearly or monthly
@@ -850,15 +850,15 @@ aside:
 # busuanzi count for PV / UV in site
 # 访问人数
 busuanzi:
-  site_uv: false
-  site_pv: false
-  page_pv: false
+  site_uv: true
+  site_pv: true
+  page_pv: true
 
 # Time difference between publish date and now (网页运行时间)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 4/1/2021 00:00:00
+  publish_date: 1/20/2026 00:00:00
 
 # Console - Newest Comments
 newest_comments:
@@ -1248,7 +1248,7 @@ dynamicEffect:
 inject:
   head:
     # 自定义css
-    # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+     - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
 
   bottom:
     # 自定义js
@@ -1340,4 +1340,5 @@ CDN:
     # ali_iconfont_css:
     # accesskey_js:
     # colorthief:
+
 
