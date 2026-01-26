@@ -14,6 +14,7 @@ menu:
     追番页: /bangumis/ || anzhiyu-icon-bilibili
     相册集: /album/ || anzhiyu-icon-images
     小空调: /air-conditioner/ || anzhiyu-icon-fan
+    后台管理: http://admin.houyi.us.ci/ || fa-solid fa-user-gear
 
   关于:
     关于本人: /about/ || anzhiyu-icon-paper-plane
@@ -37,6 +38,9 @@ nav:
         - name: 安知鱼图床
           link: https://image.anheyu.com/
           icon: https://image.anheyu.com/favicon.ico
+        - name: 后台管理
+          link: http://admin.houyi.us.ci/
+          icon: https://image.anheyu.com/favicon.ico          
 
 # mourn （哀悼日，指定日期网站简单变灰，不包括滚动条）
 # 注意： 仅网站首页变灰，其他页面正常显示
@@ -439,7 +443,7 @@ footer:
   # 徽标部分配置项 https://shields.io/
   # https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr
   bdageitem:
-    enable: false
+    enable: true
     list:
       - link: https://hexo.io/ #徽标指向网站链接
         shields: https://npm.elemecdn.com/anzhiyu-blog@2.1.5/img/badge/Frame-Hexo.svg #徽标API
@@ -457,7 +461,7 @@ footer:
         shields: https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg
         message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
   socialBar:
-    enable: false
+    enable: true
     centerImg:
     left:
       - title: email
@@ -486,7 +490,7 @@ footer:
         link: /copyright
         icon: anzhiyu-icon-copyright-line
   list:
-    enable: false
+    enable: true
     randomFriends: 3
     project:
       - title: 服务
@@ -525,7 +529,7 @@ footer:
     enable: true
     authorLink: /
     cc:
-      enable: false
+      enable: true
       link: /copyright
     linkList:
       - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
@@ -535,7 +539,7 @@ footer:
       # - link: https://beian.miit.gov.cn/
       #   text: 湘ICP备-xxxxxxx号
     subTitle:
-      enable: false
+      enable: true
       # Typewriter Effect (打字效果)
       effect: true
       # Effect Speed Options (打字效果速度参数)
@@ -553,7 +557,7 @@ footer:
       source: 1
       # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
       sub:
-        # - 生活明朗&#44; 万物可爱&#44; 人间值得&#44; 未来可期.
+        - 生活明朗&#44; 万物可爱&#44; 人间值得&#44; 未来可期.
 
 # Analysis
 # --------------------------------------
@@ -839,7 +843,7 @@ aside:
   card_archives:
     enable: true
     type: monthly # yearly or monthly
-    format: 2026 01 # eg: YYYY年MM月
+    format: 2026 0120 # eg: YYYY年MM月
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
     limit: 8 # if set 0 will show all
     sort_order: # Don't modify the setting unless you know how it works
@@ -862,7 +866,7 @@ runtimeshow:
   enable: true
   publish_date: '01/24/2026 00:00:00' # 必须加引号，确保格式严格正确
 
-# Console - Newest Comments
+# Console - Newest Comments 控制台 - 最新评论
 newest_comments:
   enable: true
   sort_order: # Don't modify the setting unless you know how it works
@@ -910,7 +914,7 @@ centerConsole:
   card_archives:
     enable: true
     type: monthly # yearly or monthly
-    format: 2026 01 # eg: YYYY年MM月
+    format: 2026 0120 # eg: YYYY年MM月
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
     limit: 8 # if set 0 will show all
     sort_order: # Don't modify the setting unless you know how it works
@@ -1342,5 +1346,6 @@ CDN:
     # ali_iconfont_css:
     # accesskey_js:
     # colorthief:
+
 
 
