@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 后羿'Blog
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
+author: 后羿'Blog
 language: zh-CN
 timezone: ''
 
@@ -126,3 +126,9 @@ envelope_comment:
     comments: true
     top_img: false
     type: envelope
+    
+  # APlayer
+  # https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md
+  aplayer:
+  meting: true
+  asset_inject: false

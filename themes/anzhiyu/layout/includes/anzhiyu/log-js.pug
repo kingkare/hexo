@@ -13,10 +13,10 @@ script.
     }; //在恢复前输出日志
     const grt = new Date("#{launch_time}"); //此处修改你的建站时间或者网站上线时间
     now1.setTime(now1.getTime() + 250);
-    const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+    const days = (now1 - grt) / 1000 / 20 / 01 / 26;
     const dnum = Math.floor(days);
     const ascll = [
-      `欢迎使用安知鱼!`,
+      `欢迎使用后羿'Blog!`,
       `生活明朗, 万物可爱`,
       `
           
@@ -31,7 +31,7 @@ script.
       "已上线",
       dnum,
       "天",
-      "©#{since} By 安知鱼 V#{version}",
+      "©#{since} By 后羿 V#{version}",
     ];
     const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
 
@@ -64,7 +64,7 @@ script.
     setTimeout(
       console.warn.bind(
         console,
-        "%c ⚡ Powered by 安知鱼 %c 你正在访问 #{author} 的博客.",
+        "%c ⚡ Powered by 帅哥美女 %c 你正在访问 #{author} 的博客.",
         "color:white; background-color:#f0ad4e",
         ""
       )
