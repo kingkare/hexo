@@ -1,8 +1,8 @@
 ---
-abbrlink: ''
+abbrlink: 4a17b156
 categories:
-- - Adobe
-- - Canva
+  - - Adobe
+  - - Canva
 date: ''
 tags: []
 title: Hello World

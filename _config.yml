@@ -11,16 +11,15 @@ author: 后羿'Blog
 language: zh-CN
 timezone: ''
 
-# URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+# URL 永久链接
+url: https://www.houyi.us.ci      #请在此处设置您的网站网址。例如，如果您使用 GitHub Pages，请将网址设置为“https://username.github.io/project”。
+permalink: :posts/:abbrlink/  #文章结尾不带 .html
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: false # 设置为false可从永久链接中删除尾随的“index.html”
+  trailing_html: false # 设置为false可从永久链接中删除尾随的“.html”
 
-# Directory
+# 目录
 source_dir: source
 public_dir: public
 tag_dir: tags
@@ -30,13 +29,13 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
-# Writing
-new_post_name: :title.md # File name of new posts
+# 写作
+new_post_name: :title.md # 新帖子的文件名
 default_layout: post
-titlecase: false # Transform title into titlecase
+titlecase: false # 将标题转换为首字母大写格式
 external_link:
-  enable: true # Open external links in new tab
-  field: site # Apply to the whole site
+  enable: true # 在新标签页中打开外部链接 false为关闭
+  field: site # 适用于整个网站
   exclude: ''
 filename_case: 0
 render_drafts: false
@@ -55,35 +54,35 @@ prismjs:
   line_number: true
   tab_replace: ''
 
-# Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
+# 首页设置
+# path：博客首页的根路径。（默认值：空字符串）
+# per_page：每页显示的文章数量。（0 = 关闭分页）
+# order_by：文章排序方式。（默认按日期降序排列）
 index_generator:
   path: ''
   per_page: 10
   order_by: -date
 
-# Category & Tag
+# 类别和标签
 default_category: uncategorized
 category_map:
 tag_map:
 
-# Metadata elements
+# 元数据元素
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true
 
-# Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
+# 日期/时间格式
+## Hexo 使用 Moment.js 解析和显示日期
+## 您可以自定义日期格式，具体定义请参见此处。
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
 updated_option: 'mtime'
 
-# Pagination
-## Set per_page to 0 to disable pagination
+# 分页
+## 将 per_page 设置为 0 可禁用分页
 per_page: 10
 pagination_dir: page
 
@@ -104,7 +103,7 @@ deploy:
   type: ''
 
   
- #envelope_comment
+#envelope_comment
 #seehttps://akilar.top/posts/e2d3c450/
 envelope_comment:
   enable: true #控制开关
@@ -132,3 +131,63 @@ envelope_comment:
   aplayer:
   meting: true
   asset_inject: false
+
+# 一个 Hexo 插件，用于根据帖子正面的标题和数据生成静态帖子链接。
+# https://github.com/rozbo/hexo-abbrlink
+# 缩写链接配置
+abbrlink:
+  alg: crc32 #支持 CRC16（默认）和 CRC32
+  rep: hex #支持十进制（默认）和十六进制
+  drafts: false #(true)处理草稿，(false)不处理草稿。false（默认值）
+  # 从目录树生成类别
+  # 深度：要生成的目录树的最大深度应大于0
+  auto_category:
+    enable: true #true（默认值）
+    depth: #3(默认值)
+    over_write: false
+  auto_title: false #启用自动标题，可以按路径自动填充标题
+  auto_date: false #启用自动日期，它可以自动填写日期的时间今天
+  force: false #启用强制模式，在这种模式下，插件将忽略缓存，并为每个帖子计算abbrlink，即使它已经有了abbrlink。
+
+# hexo-safego安全跳转插件
+# see https://blog.liushen.fun/posts/1dfd1f41/
+hexo_safego:
+  # 基本功能设置
+  general:
+    enable: true                # 启用插件
+    enable_base64_encode: true  # 使用 Base64 编码
+    enable_target_blank: true   # 从新窗口打开跳转页面
+
+  # 安全设置
+  security:
+    url_param_name: 'h'         # URL 参数名
+    html_file_name: 'go.html'   # 重定向页面的文件名
+    ignore_attrs:               # 忽略处理的 HTML 结构
+      - 'data-fancybox'
+
+  # 容器与页面设置
+  scope:
+    apply_containers:           # 应用的容器选择器
+      - '#article-container'
+    apply_pages:                # 应用的页面路径
+      - "/posts/"
+      - "/devices/"
+    exclude_pages:              # 排除的页面路径
+
+  # 域名白名单
+  whitelist:
+    domain_whitelist:           # 允许的白名单域名，通过字符串匹配实现
+      - "www.houyi.us.ci"
+      - "localhost:4000"
+
+  # 页面外观设置
+  appearance:
+    avatar: "https://fastly.jsdelivr.net/gh/willow-god/hexo-safego@latest/lib/avatar.png "   # 跳转页面头像路径
+    title: "后羿'Blog"            # 跳转页面标题
+    subtitle: "安全中心"         # 跳转页面副标题
+    darkmode: auto              # 是否启用深色模式
+    countdowntime: 10            # 跳转页面倒计时秒数，如果设置为负数则为不自动跳转
+
+  # 调试设置
+  debug:
+    enable: false               # 启用调试模式
