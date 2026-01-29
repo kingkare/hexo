@@ -1347,7 +1347,12 @@ CDN:
     # accesskey_js:
     # colorthief:
 
-
-
-
-
+# Inject
+    # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
+    # 插入代码到头部 </head> 之前 和 底部 </body> 之前
+    inject:
+      head:
+        # - <link rel="stylesheet" href="/xxx.css">
+      bottom:
+        # - <script src="xxxx"></script>
+        - <script defer src="https://cdn.jsdelivr.net/gh/kingkare/live2d-widget@master/dist/autoload.js"></script>
