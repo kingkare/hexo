@@ -150,6 +150,7 @@ avatar:
 # Disable all banner image
 disable_top_img: false
 
+# 顶部图的功能
 # The banner image of home page
 # 原版 index_img: false  "background: url() top / cover no-repeat"
 index_img: "background: url() top / cover no-repeat"
