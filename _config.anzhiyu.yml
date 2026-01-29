@@ -1349,29 +1349,16 @@ CDN:
     
 inject:
   bottom:
-    # 1. 使用 Cloudflare 的稳定源加载核心库
+    # 1. 引入核心库
     - <script src="https://cdnjs.cloudflare.com/ajax/libs/live2d-widget/3.1.4/L2Dwidget.min.js"></script>
-    # 2. 初始化配置 (这里用了一个简单的猫咪模型作为测试)
-    - <script>
+    
+    # 2. 初始化配置 (注意：下面这个符号 | 很重要，表示多行文本)
+    - |
+      <script>
         L2Dwidget.init({
-          "model": {
-            "jsonPath": "https://unpkg.com/live2d-widget-model-hijiki@1.0.5/assets/hijiki.model.json",
-            "scale": 1
-          },
-          "display": {
-            "position": "left",
-            "width": 150,
-            "height": 300,
-            "hOffset": 0,
-            "vOffset": -20
-          },
-          "mobile": {
-            "show": true,
-            "scale": 0.5
-          },
-          "react": {
-            "opacityDefault": 0.7,
-            "opacityOnHover": 0.2
-          }
+          "model": { "jsonPath": "https://unpkg.com/live2d-widget-model-hijiki@1.0.5/assets/hijiki.model.json", "scale": 1 },
+          "display": { "position": "left", "width": 150, "height": 300, "hOffset": 0, "vOffset": -20 },
+          "mobile": { "show": true, "scale": 0.5 },
+          "react": { "opacityDefault": 0.7, "opacityOnHover": 0.2 }
         });
       </script>
