@@ -1248,17 +1248,7 @@ dynamicEffect:
   postTopRollZoomInfo: false # 文章顶部滚动时缩放
   pageCommentsRollZoom: false # 非文章页面评论滚动时缩放显示（仅仅Twikoo生效）
 
-# Inject
-# Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
-# 插入代码到头部 </head> 之前 和 底部 </body> 之前
-inject:
-  head:
-    # 自定义css
-    # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
 
-  bottom:
-    # 自定义js
-    # - <script src="/js/xxx"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -1346,12 +1336,11 @@ CDN:
     # ali_iconfont_css:
     # accesskey_js:
     # colorthief:
-    
+
 inject:
   bottom:
     # 1. 引入核心库
     - <script src="https://cdnjs.cloudflare.com/ajax/libs/live2d-widget/3.1.4/L2Dwidget.min.js"></script>
-    
     # 2. 初始化配置 (注意：下面这个符号 | 很重要，表示多行文本)
     - |
       <script>
