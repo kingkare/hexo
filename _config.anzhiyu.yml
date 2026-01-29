@@ -151,7 +151,8 @@ avatar:
 disable_top_img: false
 
 # The banner image of home page
-index_img: false # "background: url() top / cover no-repeat"
+# 原版 index_img: false  "background: url() top / cover no-repeat"
+index_img: "background: url() top / cover no-repeat"
 
 # If the banner of page not setting, it will show the top_img 如果页面横幅未设置，则会显示 top_img。
 default_top_img: false
@@ -1024,7 +1025,7 @@ pangu:
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
   enable: true
-  field: site # site/post
+  field: post # site/post
   placeholder:
   blur: true
   progressive: true
@@ -1255,10 +1256,12 @@ inject:
   head:
     # 自定义css
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/imgloaded.css?1">  
 
   bottom:
     # 自定义js
     # - <script src="/js/xxx"></script>
+    - <script async data-pjax src="/js/imgloaded.js?1"></script> # 首页图片渐进式加载
 
 # CDN
 # Don't modify the following settings unless you know how they work
