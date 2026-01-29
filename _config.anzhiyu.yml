@@ -1381,6 +1381,7 @@ hexo_safego:
     apply_pages:                # 应用的页面路径
       - "/posts/"
       - "/devices/"
+      - "/undefined/"      
     exclude_pages:              # 排除的页面路径
 
   # 域名白名单
