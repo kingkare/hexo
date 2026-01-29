@@ -1352,7 +1352,8 @@ CDN:
     # 插入代码到头部 </head> 之前 和 底部 </body> 之前
     inject:
       head:
-        # - <link rel="stylesheet" href="/xxx.css">
+        #强制将 waifu 元素的层级提到最高
+        - <style> #waifu { z-index: 99999 !important; pointer-events: auto !important; } </style>
       bottom:
         # - <script src="xxxx"></script>
         - <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
