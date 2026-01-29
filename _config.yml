@@ -13,7 +13,7 @@ timezone: ''
 
 # URL 永久链接
 url: https://www.houyi.us.ci      #请在此处设置您的网站网址。例如，如果您使用 GitHub Pages，请将网址设置为“https://username.github.io/project”。
-permalink: :posts/:abbrlink/  #文章结尾不带 .html
+permalink: posts/:abbrlink/  #文章结尾不带 .html
 permalink_defaults:
 pretty_urls:
   trailing_index: false # 设置为false可从永久链接中删除尾随的“index.html”
@@ -170,8 +170,7 @@ hexo_safego:
     apply_containers:           # 应用的容器选择器
       - '#article-container'
     apply_pages:                # 应用的页面路径
-      - "/posts/"
-      - "/devices/"
+      - "/"
     exclude_pages:              # 排除的页面路径
 
   # 域名白名单
