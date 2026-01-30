@@ -3,6 +3,7 @@
     - let centerImg = theme.footer.socialBar.centerImg ? theme.footer.socialBar.centerImg : theme.avatar.img
     - let leftInfo = theme.footer.socialBar.left
     - let rightInfo = theme.footer.socialBar.right
+
   div#footer-animal
         .animal-wall
         img.animal.entered.loaded(
@@ -12,8 +13,7 @@
             alt="动物"
             data-ll-status="loaded"
         )
-
-    #footer_deal
+#footer_deal
       each item, index in leftInfo
         a.deal_link(href=url_for(item.link) title=item.title)
           if (item.icon.startsWith("fa"))
