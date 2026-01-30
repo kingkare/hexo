@@ -4,16 +4,17 @@
     - let leftInfo = theme.footer.socialBar.left
     - let rightInfo = theme.footer.socialBar.right
 
-  div#footer-animal
-        .animal-wall
-        img.animal.entered.loaded(
-            src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/color.avif"
-            onerror="this.onerror=null;this.src='/img/404.jpg';"
-            data-lazy-src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/qiangti.avif"
-            alt="动物"
-            data-ll-status="loaded"
-        )
-#footer_deal
+    div#footer-animal
+      .animal-wall
+      img.animal.entered.loaded(
+        src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/color.avif"
+        onerror="this.onerror=null;this.src='/img/404.jpg';"
+        data-lazy-src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/qiangti.avif"
+        alt="动物"
+        data-ll-status="loaded"
+      )
+
+    #footer_deal
       each item, index in leftInfo
         a.deal_link(href=url_for(item.link) title=item.title)
           if (item.icon.startsWith("fa"))
@@ -33,6 +34,7 @@
               use(xlink:href=`#`+ item.icon)
           else if (item.icon.startsWith("anzhiyu"))
             i.anzhiyufont(class=`${item.icon}`)
+
   if theme.footer.owner.enable && !theme.footer.footerBar.enable
     - var nowYear = new Date().getFullYear()
     if theme.footer.owner.since && theme.footer.owner.since != nowYear
