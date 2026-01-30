@@ -27,6 +27,10 @@ nav#nav
     #menus
       !=partial('includes/header/menu_item', {}, {cache: true})
     #nav-right
+      if theme.Day_night_toggle_button.nav
+        #nav-naoDark
+          !=partial('includes/anzhiyu/Day_night_toggle_button', {}, {cache: true})
+
       if theme.nav.travelling
         .nav-button.only-home#travellings_button(title=_p('nav.travelling'))
           a.site-page(onclick='anzhiyu.totraveling()', title=_p('nav.travelling'), href='javascript:void(0);', rel='external nofollow', data-pjax-state='external')
@@ -57,12 +61,3 @@ nav#nav
       #toggle-menu
         a.site-page(href='javascript:void(0);' title=_p('nav.toggle_menu'))
           i.anzhiyufont.anzhiyu-icon-bars
-
-
-// 导航栏引用 昼夜切换按钮HTML
-    #menus
-      !=partial('includes/header/menu_item', {}, {cache: true})
-    #nav-right
-+     if theme.Day_night_toggle_button.nav
-+       #nav-naoDark
-+         !=partial('includes/anzhiyu/Day_night_toggle_button', {}, {cache: true})
