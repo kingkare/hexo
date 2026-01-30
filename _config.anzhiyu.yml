@@ -1267,6 +1267,8 @@ inject:
     - <link rel="stylesheet" href="/css/pet.css?1">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kingkare/owo/css/polish-animation.css"> # 主页文章卡片添加擦亮动画效果
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kingkare/owo/css/twikoo_beautify.css" media="defer" onload="this.media='all'"> # twikoo 评论块气泡风格美化
+    - <link rel="stylesheet" href="https://cdn.cbd.int/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" media="defer" onload="this.media='all'"> # Font Awesome 图标支持
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kingkare/live2d_demo/assets/waifu.css" media="defer" onload="this.media='all'"> # live2d看板娘
 
   bottom:
     # 自定义js
@@ -1274,6 +1276,7 @@ inject:
     - <script async data-pjax src="/js/imgloaded.js?1"></script> # 首页图片渐进式加载
     - <script async data-pjax src="/js/countdown.js"></script> # 侧边栏倒计时
     - <script async data-pjax src="https://cdn.jsdelivr.net/gh/kingkare/owo/js/footer-animal.js"></script> # 宠物图
+    - <script async data-pjax src="https://cdn.jsdelivr.net/gh/kingkare/live2d_demo/assets/autoload.js"></script> # live2d 看板娘
 
 # CDN
 # Don't modify the following settings unless you know how they work
