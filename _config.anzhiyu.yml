@@ -1265,8 +1265,6 @@ inject:
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/imgloaded.css?1">
     - <link rel="stylesheet" href="/css/pet.css?1">
-    # 主题魔改-首页样式
-    - <link rel="stylesheet" href="/css/post-ui.css"> 
 
   bottom:
     # 自定义js
