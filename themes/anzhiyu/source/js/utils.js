@@ -1222,26 +1222,6 @@ const anzhiyu = {
       window.oncontextmenu = oncontextmenuFunction;
     }
   },
-//关闭右键菜单
-  rightMenuToggle: function () {
-    if (typeof anzhiyu_rightMenu === 'undefined') {
-      anzhiyu_rightMenu = window.oncontextmenu !== null;
-    }
-    const isRightMenuOn = anzhiyu_rightMenu;
-
-    if (isRightMenuOn) {
-      rm && rm.hideRightMenu();
-      const consolRightMenu = document.querySelector("#consoleRightMenu");
-      consolRightMenu.classList.remove("on");
-      anzhiyu_rightMenu = false;
-      window.oncontextmenu = null;
-    } else { 
-      const consolRightMenu = document.querySelector("#consoleRightMenu");
-      consolRightMenu.classList.add("on");  
-      anzhiyu_rightMenu = true;
-      window.oncontextmenu = oncontextmenuFunction;
-    },
-  //关闭右键菜单结束
   switchConsole: () => {
     // switch console
     const consoleEl = document.getElementById("console");
