@@ -1854,3 +1854,15 @@ document.addEventListener("DOMContentLoaded", function () {
   refreshFn();
   unRefreshFn();
 });
+
+// 昼夜切换按钮HTML javascript 添加按钮交互
+  window.refreshFn = function () {
+    initAdjust();
+    themeColorMeta = document.querySelector('meta[name="theme-color"]');
+    pageHeaderEl = document.getElementById("page-header");
+    navMusicEl = document.getElementById("nav-music");
+    consoleEl = document.getElementById("console");
+
+    addDarkModeEventListener("console", ".darkmode_switchbutton");
++   addDarkModeEventListener("nav-naoDark", ".components");
++   addDarkModeEventListener("console-naoDark", ".components");
