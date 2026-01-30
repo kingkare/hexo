@@ -1,1 +1,10 @@
+/* 修复浅色模式下底部栏被遮挡无法点击的问题 */
+#footer-bar {
+    position: relative;
+    z-index: 10; /* 强制提升底部栏的层级 */
+}
 
+/* 或者直接让页脚的背景遮罩不要拦截鼠标事件 */
+#footer::before {
+    pointer-events: none !important;
+}
