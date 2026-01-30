@@ -1,6 +1,6 @@
 /* 修复浅色模式下底部栏被遮挡无法点击的问题 */
 #footer-bar {
-   /*  position: relative;*/
+   /*position: relative;*/
     z-index: 10; /* 强制提升底部栏的层级 */
 }
 
