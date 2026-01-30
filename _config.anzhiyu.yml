@@ -1265,6 +1265,7 @@ inject:
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
     - <link rel="stylesheet" href="/css/imgloaded.css?1">
     - <link rel="stylesheet" href="/css/pet.css?1">
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kingkare/owo/css/polish-animation.css"> # 主页文章卡片添加擦亮动画效果
 
   bottom:
     # 自定义js
