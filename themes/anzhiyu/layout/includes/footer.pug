@@ -58,16 +58,6 @@
               i.anzhiyufont.anzhiyu-icon-arrow-rotate-right
           .footer-links#friend-links-in-footer
 
-  div#footer-animal
-        .animal-wall
-        img.animal.entered.loaded(
-            src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/color.avif"
-            onerror="this.onerror=null;this.src='/img/404.jpg';"
-            data-lazy-src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/color.avif"
-            alt="动物"
-            data-ll-status="loaded"
-        )
-
   if theme.footer.bdageitem.enable
     p#ghbdages
       each item in theme.footer.bdageitem.list
@@ -75,6 +65,17 @@
           img(src=item.shields alt=item.message)
 
 if theme.footer.footerBar && theme.footer.footerBar.enable
+
+  div#footer-animal
+        .animal-wall
+        img.animal.entered.loaded(
+            src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/color.avif"
+            onerror="this.onerror=null;this.src='/img/404.jpg';"
+            data-lazy-src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/qiangti.avif"
+            alt="动物"
+            data-ll-status="loaded"
+        )
+
   #footer-bar
     .footer-bar-links
       .footer-bar-left
