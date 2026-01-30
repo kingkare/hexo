@@ -1,14 +1,13 @@
-#footer-wrap
-  #footer-animal
+#footer-animal
     .animal-wall
     img.animal.entered.loaded(
-      src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/color.avif"
+      src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/qiangti.avif"
       onerror="this.onerror=null;this.src='/img/404.jpg';"
-      data-lazy-src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/qiangti.avif"
+      data-lazy-src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/color.avif"
       alt="动物"
       data-ll-status="loaded"
     )
-
+  #footer-wrap
   if theme.footer.socialBar.enable
     - let centerImg = theme.footer.socialBar.centerImg ? theme.footer.socialBar.centerImg : theme.avatar.img
     - let leftInfo = theme.footer.socialBar.left
