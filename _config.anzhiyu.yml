@@ -363,10 +363,10 @@ waline:
   # 以下为可选配置，后续若有新增/修改配置参数可在此自行添加/修改
   option:
 
-# Twikoo
+# Twikoo 评论系统
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://hy-twikoo.vercel.app/ #环境地址
+  envId: http://twikoo.houyi.us.ci/ #环境地址
   region:
   visitor: true #false # 是否显示文章阅读数
   option:
