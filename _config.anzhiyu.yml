@@ -1131,15 +1131,15 @@ diytitle:
 
 # 留言弹幕配置
 comment_barrage_config:
-  enable: false
+  enable: true
   # 同时最多显示弹幕数
   maxBarrage: 1
   # 弹幕显示间隔时间ms
   barrageTime: 4000
   # token，在控制台中获取
-  accessToken: ""
+  accessToken: "8195ec373f105113a0284e26c828b66e"
   # 博主邮箱md5值
-  mailMd5: ""
+  mailMd5: "bff75e3831fbf9d43a257c59fe521d11"
 
 # 左下角音乐配置项
 # https://github.com/metowolf/MetingJS
