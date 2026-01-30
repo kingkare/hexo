@@ -1,12 +1,3 @@
-div#footer-animal
-        .animal-wall
-        img.animal.entered.loaded(
-            src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/color.avif"
-            onerror="this.onerror=null;this.src='/img/404.jpg';"
-            data-lazy-src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/color.avif"
-            alt="动物"
-            data-ll-status="loaded"
-        )
 #footer-wrap
   if theme.footer.socialBar.enable
     - let centerImg = theme.footer.socialBar.centerImg ? theme.footer.socialBar.centerImg : theme.avatar.img
@@ -66,6 +57,16 @@ div#footer-animal
             a.random-friends-btn#footer-random-friends-btn(href="javascript:addFriendLinksInFooter();" title=_p('footer.refresh_friends'))
               i.anzhiyufont.anzhiyu-icon-arrow-rotate-right
           .footer-links#friend-links-in-footer
+
+  div#footer-animal
+        .animal-wall
+        img.animal.entered.loaded(
+            src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/color.avif"
+            onerror="this.onerror=null;this.src='/img/404.jpg';"
+            data-lazy-src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/color.avif"
+            alt="动物"
+            data-ll-status="loaded"
+        )
 
   if theme.footer.bdageitem.enable
     p#ghbdages
