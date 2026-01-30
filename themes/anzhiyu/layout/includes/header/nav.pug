@@ -59,3 +59,10 @@ nav#nav
           i.anzhiyufont.anzhiyu-icon-bars
 
 
+// 导航栏引用 昼夜切换按钮HTML
+    #menus
+      !=partial('includes/header/menu_item', {}, {cache: true})
+    #nav-right
++     if theme.Day_night_toggle_button.nav
++       #nav-naoDark
++         !=partial('includes/anzhiyu/Day_night_toggle_button', {}, {cache: true})
