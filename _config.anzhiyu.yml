@@ -366,7 +366,7 @@ waline:
 # Twikoo 评论系统
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: http://twikoo.houyi.us.ci/ #环境地址
+  envId: https://twikoo.hywiki.pp.ua/ #环境地址
   region:
   visitor: true #false # 是否显示文章阅读数
   option:
