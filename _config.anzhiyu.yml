@@ -815,7 +815,7 @@ aside:
   # 侧边栏倒计时开始
   card_countdown:
     enable: true
-    event_date: '2025-01-29'
+    event_date: '2026-02-17'
     event_name: 春节
   # 侧边栏倒计时结束
   card_author:
