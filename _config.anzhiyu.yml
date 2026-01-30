@@ -812,6 +812,12 @@ aside:
     archive: true
     tag: true
     category: true
+  # 侧边栏倒计时开始
+  card_countdown:
+    enable: true
+    event_date: '2025-01-29'
+    event_name: 春节
+  # 侧边栏倒计时结束
   card_author:
     enable: true
     description: <div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">产品、设计、开发</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div> # 默认为站点描述
@@ -1264,6 +1270,7 @@ inject:
     # 自定义js
     # - <script src="/js/xxx"></script>
     - <script async data-pjax src="/js/imgloaded.js?1"></script> # 首页图片渐进式加载
+    - <script async data-pjax src="/js/countdown.js"></script> # 侧边栏倒计时
 
 # CDN
 # Don't modify the following settings unless you know how they work
