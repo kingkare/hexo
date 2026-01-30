@@ -24,6 +24,16 @@
           else if (item.icon.startsWith("anzhiyu"))
             i.anzhiyufont(class=`${item.icon}`)
 
+  div#footer-animal
+        .animal-wall
+        img.animal.entered.loaded(
+            src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/color.avif"
+            onerror="this.onerror=null;this.src='/img/404.jpg';"
+            data-lazy-src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/qiangti.avif"
+            alt="动物"
+            data-ll-status="loaded"
+        )
+
   if theme.footer.owner.enable && !theme.footer.footerBar.enable
     - var nowYear = new Date().getFullYear()
     if theme.footer.owner.since && theme.footer.owner.since != nowYear
@@ -65,17 +75,6 @@
           img(src=item.shields alt=item.message)
 
 if theme.footer.footerBar && theme.footer.footerBar.enable
-
-  div#footer-animal
-        .animal-wall
-        img.animal.entered.loaded(
-            src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/color.avif"
-            onerror="this.onerror=null;this.src='/img/404.jpg';"
-            data-lazy-src="https://cdn.jsdelivr.net/gh/kingkare/owo/img/qiangti.avif"
-            alt="动物"
-            data-ll-status="loaded"
-        )
-
   #footer-bar
     .footer-bar-links
       .footer-bar-left
