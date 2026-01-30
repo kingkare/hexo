@@ -1,45 +1,47 @@
 ---
 abbrlink: 4a17b156
 categories:
-  - - Adobe
-  - - Canva
+- - Adobe
+- - Canva
 date: ''
 tags: []
 title: Hello World
-updated: '2026-01-25T02:09:47.842+08:00'
+updated: '2026-01-31T03:46:43.492+08:00'
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+[给博客添加定位个性欢迎](https://blog.naokuo.top/p/a83f8302.html)
 
-## Quick Start
+[给你的博客底部添加一排宠物](https://blog.qjqq.cn/posts/f69c.html)
 
-### Create a new post
+[爱吃肉的猫]([https://](https://meuicat.com))
 
-```bash
-$ hexo new "My New Post"
-```
+[Eurkon](https://blog.eurkon.com)
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+[青桔气球友联](https://blog.qjqq.cn/links/)
 
-### Run server
+[梦爱吃鱼](https://blog.bsgun.cn)
 
-```bash
-$ hexo server
-```
+[为博客添加一个游戏收藏页](https://blog.randench.cn/posts/59357/#原文地址)
 
-More info: [Server](https://hexo.io/docs/server.html)
+[AnzhiYu 主题音乐馆添加歌曲下载](https://blog.randench.cn/posts/52470/#写在前面)
 
-### Generate static files
+[为主页文章卡片添加擦亮动画效果](https://blog.randench.cn/posts/56742/)
 
-```bash
-$ hexo generate
-```
+[糖果屋](https://akilar.top)
 
-More info: [Generating](https://hexo.io/docs/generating.html)
+[在网页上加入 live2d](https://blog.randench.cn/posts/57431/)       [autoload](https://cdn.jsdelivr.net/gh/RandomEnch/live2d-widget/autoload.js)   [RandomEnch](https://github.com/RandomEnch/live2d-widget)
 
-### Deploy to remote sites
+[添加白天夜间模式转换动画](https://blog.randench.cn/posts/11982/)
 
-```bash
-$ hexo deploy
-```
+[给博客添加个性名片](https://blog.randench.cn/posts/33673/)
 
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+[右下角菜单打开评论板块](https://blog.randench.cn/posts/2844/)
+
+[打赏按钮投币彩蛋效果](https://blog.randench.cn/posts/7800/)
+
+[钧言极客](https://www.jinjun.top/categories/)
+
+https://cdn.jsdelivr.net/gh/kingkare/live2d_demo/assets/waifu.css
+
+https://cdn.jsdelivr.net/gh/kingkare/owo/css/fixed_comment.css
+
+https://cdn.jsdelivr.net/gh/kingkare/owo/js/fixed_comment.js
