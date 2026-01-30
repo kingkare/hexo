@@ -1257,8 +1257,7 @@ inject:
   head:
     # 自定义css
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
-    - <link rel="stylesheet" href="/css/imgloaded.css?1">  
-    - <link rel="stylesheet" href="/css/pet.css" media="defer" onload="this.media='all'">  
+    - <link rel="stylesheet" href="/css/imgloaded.css?1"> 
 
   bottom:
     # 自定义js
