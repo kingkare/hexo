@@ -1271,6 +1271,7 @@ inject:
     # - <script src="/js/xxx"></script>
     - <script async data-pjax src="/js/imgloaded.js?1"></script> # 首页图片渐进式加载
     - <script async data-pjax src="/js/countdown.js"></script> # 侧边栏倒计时
+    - <script async data-pjax src="https://cdn.jsdelivr.net/gh/kingkare/owo/js/footer-animal.js"></script> # 宠物图
 
 # CDN
 # Don't modify the following settings unless you know how they work
