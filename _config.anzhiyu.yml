@@ -1353,5 +1353,5 @@ CDN:
 
 # 昼夜切换按钮
 Day_night_toggle_button:
-  console: true # 中控台
-  nav: true # 导航栏
+  console: false # 中控台
+  nav: false # 导航栏
