@@ -12,7 +12,7 @@ updated: '2026-01-31T03:46:43.492+08:00'
 
 [给你的博客底部添加一排宠物](https://blog.qjqq.cn/posts/f69c.html)
 
-[爱吃肉的猫]([https://](https://meuicat.com))
+[爱吃肉的猫](https://meuicat.com)
 
 [Eurkon](https://blog.eurkon.com)
 
@@ -39,6 +39,14 @@ updated: '2026-01-31T03:46:43.492+08:00'
 [打赏按钮投币彩蛋效果](https://blog.randench.cn/posts/7800/)
 
 [钧言极客](https://www.jinjun.top/categories/)
+
+[Akilarの友人帐](https://akilar.top/link/)
+
+[卡诺の教程合集索引（2021.03.09）](https://zfe.space/post/55585.html)
+
+[糖果屋微调合集](https://akilar.top/posts/23fdf850/)
+
+
 
 https://cdn.jsdelivr.net/gh/kingkare/live2d_demo/assets/waifu.css
 

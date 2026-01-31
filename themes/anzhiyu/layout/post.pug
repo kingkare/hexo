@@ -27,8 +27,10 @@ block content
             - let date_type = data_type_update ? 'updated' : 'date'
             time(itemprop="dateCreated datePublished" datetime=date_xml(page[date_type]) title=date_title + ' ' + full_date(page[date_type]))=date(page[date_type], config.date_format)
       !=page.content
-
     include includes/post/post-copyright.pug
+    //- 文章页个人名片引用PUG文件
+    if page.businesscard ? page.businesscard : theme.businesscard.enable
+      include includes/anzhiyu/businesscard.pug
 
     //- ad
     if theme.ad && theme.ad.post

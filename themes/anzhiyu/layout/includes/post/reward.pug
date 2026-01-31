@@ -1,4 +1,4 @@
-.post-reward(onclick='anzhiyu.addRewardMask()')
+//-.post-reward(onclick='anzhiyu.addRewardMask()')
   .reward-button.button--animated(title=_p('reward.title'))
     i.anzhiyufont.anzhiyu-icon-hand-heart-fill
     =_p('reward.button')
@@ -15,4 +15,68 @@
       a.reward-main-btn(href='/about/#about-reward' target='_blank')
         .reward-text=_p('reward.list')
         .reward-dec=_p('reward.list_desc')
+//-#quit-box(onclick="anzhiyu.removeRewardMask()" style="display: none")
+
+//-以上为原版文件内容  
+//- 打赏按钮投币彩蛋效果
+
+
+link(rel='stylesheet' href=url_for(theme.CDN.coin_css) media="defer" onload="this.media='all'")
+script.
+  // 点击按钮时取消hover属性
+  let clickedElement = null;
+
+  function toggleClickEffect(event) {
+      const element = event.currentTarget;
+      
+      if (clickedElement === element) {
+          // 如果点击的是已经点击的元素，则取消 clicked 状态
+          clickedElement.classList.remove('clicked');
+          clickedElement = null;
+      } else {
+          // 否则，设置 clicked 状态
+          if (clickedElement) {
+              clickedElement.classList.remove('clicked');
+          }
+          element.classList.add('clicked');
+          clickedElement = element;
+      }
+  }
+
+  // 处理鼠标移开事件
+  document.addEventListener('mousemove', (event) => {
+      if (clickedElement && !clickedElement.contains(event.target)) {
+          clickedElement.classList.remove('clicked');
+          clickedElement = null;
+      }
+  });
+//- .post-reward(onclick='anzhiyu.addRewardMask()')
+.post-reward(onclick='toggleClickEffect(event)')
+  //- .reward-button.button--animated(title='打赏作者')
+  //-   i.anzhiyufont.anzhiyu-icon-hand-heart-fill
+  //-   | 打赏作者
+  button.tip-button.reward-button
+    span.tip-button__text= '打赏'
+    .coin-wrapper
+      .coin
+        .coin__middle
+        .coin__back
+        .coin__front
+  .reward-main
+    .reward-all
+      span.reward-title 感谢你赐予我前进的力量
+      ul.reward-group
+        each item in theme.reward.QR_code
+          - var clickTo = item.link ? item.link : item.img
+          li.reward-item
+            a(href=url_for(clickTo) target='_blank')
+              img.post-qr-code-img(src=url_for(item.img) alt=item.text)
+            .post-qr-code-desc=item.text
+      //- a.reward-main-btn(href='/about/#about-reward' target='_blank')
+      //-   .reward-text 赞赏者名单
+      //-   .reward-dec 因为你们的支持让我意识到写文章的价值🙏
 #quit-box(onclick="anzhiyu.removeRewardMask()" style="display: none")
+if theme.reward.coinAudio
+  - var coinAudio = theme.reward.coinAudio ? url_for(theme.reward.coinAudio) : 'https://npm.elemecdn.com/akilar-candyassets@1.0.16/audio/coin.mp3'
+  audio#coinAudio(src=coinAudio)
+script(defer src=url_for(theme.CDN.coin_js))

@@ -27,7 +27,9 @@ mixin rightsideItem(array)
             i.anzhiyufont.anzhiyu-icon-comment-sms
       when 'comment'
         if commentsJsLoad
-          a#to_comment(href="#post-comment" title=_p("rightside.scroll_to_comment"))
+          //-a#to_comment(href="#post-comment" title=_p("rightside.scroll_to_comment"))
+          //- 右下角菜单打开评论板块开始 一行
+          button#to_comment(type="button" title=_p("rightside.scroll_to_comment")     onclick="FixedCommentBtn();")  
             i.anzhiyufont.anzhiyu-icon-comments
         if theme.comment_barrage_config && theme.comment_barrage_config.enable
           a#switch-commentBarrage(href="javascript:anzhiyu.switchCommentBarrage();" title="开关弹幕")

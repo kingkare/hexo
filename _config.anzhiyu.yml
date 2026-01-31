@@ -1256,7 +1256,7 @@ dynamicEffect:
   postTopRollZoomInfo: false # 文章顶部滚动时缩放
   pageCommentsRollZoom: false # 非文章页面评论滚动时缩放显示（仅仅Twikoo生效）
 
-# Inject
+# Inject 自定义css文件/js文件
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
@@ -1269,6 +1269,8 @@ inject:
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kingkare/owo/css/twikoo_beautify.css" media="defer" onload="this.media='all'"> # twikoo 评论块气泡风格美化
     - <link rel="stylesheet" href="https://cdn.cbd.int/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" media="defer" onload="this.media='all'"> # Font Awesome 图标支持
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kingkare/live2d_demo/assets/waifu.css" media="defer" onload="this.media='all'"> # live2d看板娘
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kingkare/owo/css/fixed_comment.css" media="defer" onload="this.media='all'"> # 右下角菜单打开评论板块css文件
+    - <link rel="stylesheet" href="https://testingcf.jsdelivr.net/gh/kingkare/owo/css/coinn.css"> # 打赏按钮投币菜单效果css文件
 
   bottom:
     # 自定义js
@@ -1277,6 +1279,8 @@ inject:
     - <script async data-pjax src="/js/countdown.js"></script> # 侧边栏倒计时
     - <script async data-pjax src="https://cdn.jsdelivr.net/gh/kingkare/owo/js/footer-animal.js"></script> # 宠物图
     - <script async data-pjax src="https://cdn.jsdelivr.net/gh/kingkare/live2d_demo/assets/autoload.js"></script> # live2d 看板娘
+    - <script data-pjax defer src="https://cdn.jsdelivr.net/gh/kingkare/owo/js/fixed_comment.js"></script> # 右下角菜单打开评论板块JS文件
+    - <script async data-pjax src="https://cdn.jsdelivr.net/gh/kingkare/owo/js/coin.js"></script> # 打赏按钮投币菜单效果js文件
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -1369,3 +1373,16 @@ CDN:
 Day_night_toggle_button:
   console: false # 中控台
   nav: false # 导航栏
+
+# 文章内个人名片
+businesscard:
+  enable: true #总开关
+  master: HouYi #群主ID
+  QR_code: "https://cdn.jsdelivr.net/gh/kingkare/owo/img/tgewm.webp"
+  group: "@edu_shopsell" #群号
+  created: 01/20/2026 #建群时间
+  front: Welcome to Houyi's Blog #卡面正面描述语
+  back1: sitelink #背面从上到下四行文字内容自定义
+  back2: <a target="_blank" color="#49b1f5" href="https://t.me/+-u6ignxgjbswNGY9">加入群聊【后羿】</a>
+  back3: Use this card to join Houyi's Blog and participate in enjoyable discussions.
+  back4: Welcome to Hou Yi's blog. Have a wonderful day!
