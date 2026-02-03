@@ -6,6 +6,7 @@
   limit: 30
   home_essay: true
   top_background: https://cdn.jsdelivr.net/gh/kingkare/owo/img/64fc80bd661c6c8e5403c5d9.webp
+  top_video: https://cdn.jsdelivr.net/npm/sntube-blog-static@1.1.2/essay/video/ztmy_cm.mp4
   essay_list:
     - content: 安知鱼主题指南
       date: 2023/09/09

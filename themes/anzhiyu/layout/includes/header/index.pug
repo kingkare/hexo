@@ -1,29 +1,103 @@
+//- if !theme.disable_top_img && page.top_img !== false
+//-   if is_post()
+//-     - var top_img = page.top_img || page.cover || page.randomcover
+//-   else if is_page()
+//-     - var top_img = page.top_img || theme.default_top_img
+//-   else if is_home()
+//-     - var top_img = theme.index_img !== false ? theme.index_img || theme.default_top_img : false
+//-     - var home_index_img = theme.index_img !== false ? theme.index_img || theme.default_top_img : false
+//-   else
+//-     - var top_img = page.top_img || theme.default_top_img
+
+//-   if top_img !== false
+        //-- var imgSource = top_img && top_img.indexOf('/') !== -1 ? url_for(top_img) : top_img
+//-     - var imgSource = (typeof top_img === 'string' && top_img.indexOf('/') !== -1) ? url_for(top_img) : top_img
+//-     - var bg_img = top_img ? imgSource : ''
+//-     - var home_index_img_bg = home_index_img ? home_index_img : ''
+//-     - var site_title = page.title || page.tag || page.category || config.title
+//-     - var isHomeClass = is_home() ? 'full_page' : 'not-home-page'
+//-     - is_post() ? isHomeClass = 'post-bg' : isHomeClass
+//-   else
+//-     - var isHomeClass = 'not-top-img'
+//- else
+//-   - var top_img = false
+//-   - var isHomeClass = 'not-top-img'
+//- header#page-header(class=`${isHomeClass}` style=home_index_img_bg)
+//-   !=partial('includes/header/nav', {}, {cache: true})
+//-   if top_img !== false
+//-     if is_post()
+//-       if page.bilibili_bg
+//-         !=partial('includes/bili-banner/index')
+//-       else
+//-         include ./post-info.pug
+//-         if theme.dynamicEffect && theme.dynamicEffect.postTopWave
+//-           section.main-hero-waves-area.waves-area
+//-             svg.waves-svg(xmlns='http://www.w3.org/2000/svg', xlink='http://www.w3.org/1999/xlink', viewBox='0 24 150 28', preserveAspectRatio='none', shape-rendering='auto')
+//-               defs
+//-                 path#gentle-wave(d='M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z')
+//-               g.parallax
+//-                 use(href='#gentle-wave', x='48', y='0')
+//-                 use(href='#gentle-wave', x='48', y='3')
+//-                 use(href='#gentle-wave', x='48', y='5')
+//-                 use(href='#gentle-wave', x='48', y='7')
+//-         #post-top-cover
+//-           img#post-top-bg(class='nolazyload' src=bg_img)
+
+//-     else if is_home() 
+//-       #site-info
+//-         h1#site-title=site_title
+//-         if theme.subtitle.enable
+//-           - var loadSubJs = true
+//-           #site-subtitle
+//-             span#subtitle
+//-         if(theme.social)
+//-           #site_social_icons
+//-             !=fragment_cache('social', function(){return partial('includes/header/social')})
+//-       #scroll-down
+//-         i.anzhiyufont.anzhiyu-icon-angle-down.scroll-down-effects
+//-     else
+//-       #page-site-info
+//-         h1#site-title=site_title
+
+
+//- 以上为原版 以下为新版
+
+//- 优先级控制逻辑
+- var top_img = false
+- var home_index_img = false
+- var home_index_video = false
+- var isHomeClass = 'not-top-img'
+- var site_title = page.title || page.tag || page.category || config.title
+
 if !theme.disable_top_img && page.top_img !== false
   if is_post()
-    - var top_img = page.top_img || page.cover || page.randomcover
+    - top_img = page.top_img || page.cover || page.randomcover
   else if is_page()
-    - var top_img = page.top_img || theme.default_top_img
+    - top_img = page.top_img || theme.default_top_img
   else if is_home()
-    - var top_img = theme.index_img !== false ? theme.index_img || theme.default_top_img : false
-    - var home_index_img = theme.index_img !== false ? theme.index_img || theme.default_top_img : false
+    //- 首页专用媒体声明
+    - home_index_img = theme.index_img && theme.index_img.enable ? theme.index_img.path : false
+    - home_index_video = theme.index_video && theme.index_video.enable ? theme.index_video.path : false
+    - top_img = home_index_img || home_index_video || theme.default_top_img
   else
-    - var top_img = page.top_img || theme.default_top_img
+    - top_img = page.top_img || theme.default_top_img
 
   if top_img !== false
-    //-- var imgSource = top_img && top_img.indexOf('/') !== -1 ? url_for(top_img) : top_img
-    - var imgSource = (typeof top_img === 'string' && top_img.indexOf('/') !== -1) ? url_for(top_img) : top_img
-    - var bg_img = top_img ? imgSource : ''
-    - var home_index_img_bg = home_index_img ? home_index_img : ''
-    - var site_title = page.title || page.tag || page.category || config.title
-    - var isHomeClass = is_home() ? 'full_page' : 'not-home-page'
-    - is_post() ? isHomeClass = 'post-bg' : isHomeClass
+    - var imgSource = top_img && top_img.indexOf('/') !== -1 ? url_for(top_img) : top_img
+    - var homeImg = home_index_img ? url_for(home_index_img) : ''
+    - var homeVideo = home_index_video ? url_for(home_index_video) : ''
+    - var bg_img = is_home() ? (homeImg || homeVideo) : imgSource
+    - isHomeClass = is_home() ? 'full_page' : 'not-home-page'
+    if is_post()
+      - isHomeClass = 'post-bg'
   else
-    - var isHomeClass = 'not-top-img'
+    - isHomeClass = 'not-top-img'
 else
-  - var top_img = false
-  - var isHomeClass = 'not-top-img'
-header#page-header(class=`${isHomeClass}` style=home_index_img_bg)
+  - isHomeClass = 'not-top-img'
+
+header#page-header(class=`${isHomeClass}`)
   !=partial('includes/header/nav', {}, {cache: true})
+  
   if top_img !== false
     if is_post()
       if page.bilibili_bg
@@ -41,20 +115,32 @@ header#page-header(class=`${isHomeClass}` style=home_index_img_bg)
                 use(href='#gentle-wave', x='48', y='5')
                 use(href='#gentle-wave', x='48', y='7')
         #post-top-cover
-          img#post-top-bg(class='nolazyload' src=bg_img)
-
-    else if is_home() 
+          img#post-top-bg(class='nolazyload' src=bg_img alt="cover")
+          
+    else if is_home()
+      //- 首页媒体容器
+      #home-media-container(
+        data-landscape-img=homeImg
+        data-portrait-img=home_index_img && theme.index_img.vpath ? url_for(theme.index_img.vpath) : ''
+        data-landscape-video=homeVideo
+        data-portrait-video=home_index_video && theme.index_video.vpath ? url_for(theme.index_video.vpath) : ''
+        data-landscape-poster=home_index_video && theme.index_video.poster ? url_for(theme.index_video.poster) : ''
+        data-portrait-poster=home_index_video && theme.index_video.vposter ? url_for(theme.index_video.vposter) : ''
+        style=`height:100%; background-image: url(${homeImg}); background-size: cover; z-index:0`
+      )
       #site-info
         h1#site-title=site_title
-        if theme.subtitle.enable
+        if theme.subtitle && theme.subtitle.enable
           - var loadSubJs = true
           #site-subtitle
             span#subtitle
-        if(theme.social)
+        if theme.social
           #site_social_icons
             !=fragment_cache('social', function(){return partial('includes/header/social')})
       #scroll-down
         i.anzhiyufont.anzhiyu-icon-angle-down.scroll-down-effects
+        
     else
-      #page-site-info
+      //- 普通页面
+      #page-site-info(style=`background-image: url(${imgSource})`)
         h1#site-title=site_title

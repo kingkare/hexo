@@ -7,6 +7,53 @@ doctype html
 html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside)
   head
     include ./head.pug
+  //-- 灯笼代码开始
+
+if theme.denglong.enable
+  - const denglongText = theme.denglong.text || "新年快乐";
+  .denglong
+    //- 第1个灯笼 (新)
+    div(class=`deng-box1`)
+      .deng
+        .xian
+        .deng-a
+          .deng-b
+            .deng-t= denglongText[0]
+        .shui.shui-a
+          .shui-c
+          .shui-b
+    //- 第2个灯笼 (年)
+    div(class=`deng-box2`)
+      .deng
+        .xian
+        .deng-a
+          .deng-b
+            .deng-t= denglongText[1]
+        .shui.shui-a
+          .shui-c
+          .shui-b
+    //- 第3个灯笼 - 对应 CSS 的 box3，但视觉上在最右边，所以放第4个字 (乐)
+    div(class=`deng-box3`)
+      .deng
+        .xian
+        .deng-a
+          .deng-b
+            .deng-t= denglongText[3]
+        .shui.shui-a
+          .shui-c
+          .shui-b
+    //- 第4个灯笼 - 对应 CSS 的 box4，但视觉上在右二，所以放第3个字 (快)
+    div(class=`deng-box4`)
+      .deng
+        .xian
+        .deng-a
+          .deng-b
+            .deng-t= denglongText[2]
+        .shui.shui-a
+          .shui-c
+          .shui-b
+
+  //-- 灯笼代码结束 
   body(data-type="anzhiyu")
     #web_bg
     #an_music_bg
@@ -87,5 +134,5 @@ html(lang=config.language data-theme=theme.display_mode class=htmlClassHideAside
     !=partial('includes/anzhiyu/rightmenu', {}, {cache:true})
     include ./additional-js.pug
 
-    //- 弹窗通知
+    //-- 弹窗通知
     !=partial('includes/popup/index', {}, {cache: true})

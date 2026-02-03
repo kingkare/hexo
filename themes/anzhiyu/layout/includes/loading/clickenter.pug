@@ -1,0 +1,31 @@
+#loading-box(onclick='document.getElementById("loading-box").classList.add("loaded")')
+  #loading-box-me
+    #wrapper
+      #mouse
+      .loader
+      .loading-bar-me
+        .progress-bar
+      .status
+        .state
+        .percentage
+script.
+  const preloader = {
+    endLoading: () => {
+      var loadingBox = document.getElementById('loading-box');
+      var loadingBoxme = document.getElementById('loading-box-me');
+      loadingBoxme.addEventListener('animationend', () => {setTimeout(function() {loadingBox.classList.add("loaded");}, 2000) })
+    },
+    initLoading: () => {
+      document.getElementById('loading-box').classList.remove("loaded")
+    },
+    otherendLoading: () => {
+      document.getElementById('loading-box').classList.add("loaded")
+    }
+  }
+  window.addEventListener('load',()=> { preloader.endLoading() })
+  setTimeout(function(){preloader.otherendLoading();},10000)
+
+  if (!{theme.pjax && theme.pjax.enable}) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.otherendLoading() })
+  }

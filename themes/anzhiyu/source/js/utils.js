@@ -1059,15 +1059,15 @@ const anzhiyu = {
 
     function dr_js_autofill_commentinfos() {
       var lauthor = [
-          "#author",
-          "input[name='comname']",
-          "#inpName",
-          "input[name='author']",
-          "#ds-dialog-name",
-          "#name",
-          "input[name='nick']",
-          "#comment_author",
-        ],
+        "#author",
+        "input[name='comname']",
+        "#inpName",
+        "input[name='author']",
+        "#ds-dialog-name",
+        "#name",
+        "input[name='nick']",
+        "#comment_author",
+      ],
         lmail = [
           "#mail",
           "#email",

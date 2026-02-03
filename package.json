@@ -29,6 +29,10 @@
     "hexo-server": "^3.0.0",
     "hexo-theme-landscape": "^1.0.0",
     "hexo-wordcount": "^6.0.1",
+    "pug": "^3.0.3",
     "pwa-asset-generator": "^8.1.2"
+  },
+  "overrides": {
+    "with": "7.0.2"
   }
 }
