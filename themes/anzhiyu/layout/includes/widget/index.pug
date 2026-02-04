@@ -13,6 +13,7 @@
       !=partial('includes/widget/card_top_self', {}, {cache: true})
       //- 侧边栏倒计时
       !=partial('includes/widget/card_countdown', {}, {cache: true})
+      !=partial('includes/widget/aside_countdown', {}, {cache: true})      
       .sticky_layout
         if showToc
           include ./card_post_toc.pug
@@ -25,7 +26,10 @@
     !=partial('includes/widget/card_weixin', {}, {cache: true})
     !=partial('includes/widget/card_top_self', {}, {cache: true})
     //- 侧边栏倒计时
-    !=partial('includes/widget/card_countdown', {}, {cache: true})
+    //-!=partial('includes/widget/card_countdown', {}, {cache: true})
+    //- 五种效果倒计时开始
+    !=partial('includes/widget/aside_countdown', {}, {cache: true}) 
+    //- 五种效果倒计时结束   
     !=partial('includes/widget/card_categories', {}, {cache: true})  
 
     .sticky_layout

@@ -842,12 +842,14 @@ aside:
     archive: true
     tag: true
     category: true
+
   # 侧边栏倒计时开始
   card_countdown:
-    enable: true
+    enable: false
     event_date: '2026-02-17'
     event_name: 春节
   # 侧边栏倒计时结束
+
   card_author:
     enable: true
     description: <div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">产品、设计、开发</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div> # 默认为站点描述
@@ -1305,18 +1307,21 @@ inject:
     - <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"> # loading用的fontawesome图标   
     - <link rel="stylesheet" href="https://testingcf.jsdelivr.net/gh/kingkare/owo/css/essay-style.css"> # 即刻短文移动端样式，模仿微信朋友圈样式
     - <link rel="stylesheet" href="https://testingcf.jsdelivr.net/gh/kingkare/owo/css/index_media.css"> # index_img兼容视频展示所需文件
-    - <link rel="stylesheet" href="/css/chinese-new-year.css"> # index_img兼容视频展示所需文件    
+    - <link rel="stylesheet" href="/css/chinese-new-year.css"> # index_img兼容视频展示所需文件
+    - <link rel="stylesheet" href="https://testingcf.jsdelivr.net/gh/kingkare/owo/css/5typesofcountdowns.css"> # 5种效果倒计时所需文件 
+     
     
   bottom:
     # 自定义js
     # - <script src="/js/xxx"></script>
     - <script async data-pjax src="/js/imgloaded.js?1"></script> # 首页图片渐进式加载
     - <script async data-pjax src="/js/countdown.js"></script> # 侧边栏倒计时
-    - <script async data-pjax src="https://cdn.jsdelivr.net/gh/kingkare/owo/js/footer-animal.js"></script> # 宠物图
+    - <script async data-pjax src="https://cdn.jsdelivr.net/gh/kingkare/owo/js/Footer-Pets.js"></script> # 宠物图
     - <script async data-pjax src="https://cdn.jsdelivr.net/gh/kingkare/live2d_demo/assets/autoload.js"></script> # live2d 看板娘
     - <script data-pjax defer src="https://cdn.jsdelivr.net/gh/kingkare/owo/js/fixed_comment.js"></script> # 右下角菜单打开评论板块JS文件
     - <script async data-pjax src="https://cdn.jsdelivr.net/gh/kingkare/owo/js/coin.js"></script> # 打赏按钮投币菜单效果js文件
     - <script async data-pjax src="https://cdn.jsdelivr.net/gh/kingkare/owo/js/index_media.js"></script> # index_img兼容视频展示所需文件 
+    - <script async data-pjax src="https://cdn.jsdelivr.net/gh/kingkare/owo/js/5typesofcountdowns.js"></script> # 5种效果倒计时所需文件    
 
 # CDN
 # Don't modify the following settings unless you know how they work
@@ -1427,3 +1432,19 @@ businesscard:
 denglong:
   enable: true
   text: "新年快乐" #文字反着来
+
+
+
+# 倒计时挂件配置开始
+aside_countdown: # 注意：这里建议用 aside_countdown 对应你 Pug 里的变量名
+  enable: true
+  event_date: '2026-02-17'
+  event_name: '春节'
+  default_theme: 'traditional'
+  themes_list:
+    traditional: "传统红火"
+    modern: "华丽金秋"
+    ink: "水墨丹青"
+    blue: "科技之蓝"
+    green: "生机盎然"
+  # 倒计时挂件配置结束

@@ -1,0 +1,27 @@
+/* 现代金耀风格核心样式 */
+.theme-modern {
+    background: linear-gradient(135deg, #1a1a1a 0%, #4a3a1e 100%);
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    padding: 15px;
+    border-radius: 12px;
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+.theme-modern .timer-num {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.5rem;
+    background: linear-gradient(to bottom, #fff3a0, #d4af37);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 金色边框呼吸动画 */
+@keyframes goldGlow {
+    0% { box-shadow: 0 0 5px #d4af37; }
+    50% { box-shadow: 0 0 20px #d4af37; }
+    100% { box-shadow: 0 0 5px #d4af37; }
+}
+.card-countdown {
+    animation: goldGlow 3s infinite;
+}

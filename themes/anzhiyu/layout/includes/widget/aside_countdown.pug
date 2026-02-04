@@ -1,0 +1,74 @@
+//- if theme.aside_countdown && theme.aside_countdown.enable
+       //-.card-widget.card-countdown(id="card-countdown")
+//-   .card-widget.card-countdown
+//-     .item-headline
+//-       i.fas.fa-hourglass-half
+//-       span= _p('春节倒计时')
+          //- 齿轮图标，调用外部 JS 中的函数
+//-       i.fas.fa-cog.countdown-settings(onclick="toggleCountdownMenu()" title="切换风格")
+    
+        //- 风格选择菜单 (根据配置文件动态生成)
+//-     .countdown-menu#countdown-menu
+//-       if theme.aside_countdown.themes_list
+//-         each name, key in theme.aside_countdown.themes_list
+//-           .menu-item(onclick=`changeCountdownTheme('${key}')`)= name
+
+//-     .countdown-content(id="countdown-main-content" class=`theme-${theme.aside_countdown.default_theme || 'traditional'}`)
+//-       .spring-date-info
+//-         span 2026年2月17日 · 农历正月初一
+//-       .countdown-timer
+//-         .timer-item
+//-           span#days.timer-num 00
+//-           span.timer-unit 天
+//-         .timer-item
+//-           span#hours.timer-num 00
+//-           span.timer-unit 时
+//-         .timer-item
+//-           span#minutes.timer-num 00
+//-           span.timer-unit 分
+//-         .timer-item
+//-           span#seconds.timer-num 00
+//-           span.timer-unit 秒
+//-       .zodiac-info
+//-         i.fas.fa-horse
+//-         span 丙午马年 · 金马迎春
+        
+        //- 动态生成的福字烟花容器 
+//-     .fu-container
+
+
+if theme.aside_countdown && theme.aside_countdown.enable
+  .card-widget.card-countdown
+    .item-headline
+      i.fas.fa-hourglass-half
+      span= _p('春节倒计时')
+      i.fas.fa-cog.countdown-settings(onclick="toggleCountdownMenu()" title="切换风格")
+    
+    .countdown-menu#countdown-menu
+      if theme.aside_countdown.themes_list
+        each name, key in theme.aside_countdown.themes_list
+          .menu-item(onclick=`changeCountdownTheme('${key}')`)= name
+
+    //- 这里的 class 会根据 JS 动态切换 theme-modern, theme-golden 等
+    .countdown-content#countdown-main-content(class=`theme-${theme.aside_countdown.default_theme || 'traditional'}`)
+      .spring-date-info
+        span#spring-date-text 2026年2月17日 · 农历正月初一
+      .countdown-timer
+        .timer-item
+          span#days.timer-num 00
+          span.timer-unit 天
+        .timer-item
+          span#hours.timer-num 00
+          span.timer-unit 时
+        .timer-item
+          span#minutes.timer-num 00
+          span.timer-unit 分
+        .timer-item
+          span#seconds.timer-num 00
+          span.timer-unit 秒
+      .zodiac-info
+        i.fas.fa-dragon
+        span#zodiac-text 丙午马年 · 金马迎春
+        
+    //- 专门用于金耀效果的动态容器
+    .fu-container#fu-container
