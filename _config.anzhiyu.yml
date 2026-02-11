@@ -1313,7 +1313,7 @@ agreementPopup:
 rightClickMenu:
   enable: true
 
-# 首页随便逛逛people模式 而非技能点模式，关闭后为技能点模式需要配置creativity.yml
+# 首页随便逛逛人潮汹涌people模式 而非技能点模式，关闭后为技能点模式需要配置creativity.yml
 peoplecanvas:
   enable: true
   img:  https://testingcf.jsdelivr.net/gh/kingkare/owo/img/ahugecrowd.webp
@@ -1339,12 +1339,14 @@ inject:
   head:
     # 自定义css
     # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">.
-    - <link rel="stylesheet" href="/css/todolist.css"> # 待办清单页    
+    - <link rel="stylesheet" href="/css/todolist.css"> # 待办清单页
+    - <link rel="stylesheet" href="https://testingcf.jsdelivr.net/gh/kingkare/owo/css/fps.css"> # FPS所需文件        
 
   bottom:
     # 自定义js
     # - <script src="/js/xxx"></script>
     - <script src="https://testingcf.jsdelivr.net/gh/kingkare/owo/js/Cherryblossoms.js"></script>  # 落樱特效js文件
+    - <script src="https://testingcf.jsdelivr.net/gh/kingkare/owo/js/fps.js"></script>  # FPS所需文件  
 
 # CDN
 # Don't modify the following settings unless you know how they work
