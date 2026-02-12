@@ -1,3 +1,20 @@
+- class_name: 精品推荐
+  flink_style: flexcard
+  hundredSuffix: ""
+  link_list:
+    - name: MO的记事簿
+      link: https://blog.xiowo.net/
+      avatar: https://blog.xiowo.net/img/siteicon/apple-icon-180.png
+      descr: MO的记事簿
+
+    - name: 安知鱼主题美化及实用教程库
+      link: https://blog.xiowo.net/posts/anzhiyu/
+      avatar: https://blog.xiowo.net/img/avatar.png
+      descr: 安知鱼主题美化及实用教程库
+      siteshot: https://testingcf.jsdelivr.net/gh/kingkare/owo/img/66c42798d0d52.jpg
+
+
+
 - class_name: 框架
   flink_style: flexcard
   hundredSuffix: ""
