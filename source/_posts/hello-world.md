@@ -15,3 +15,6 @@ tags:
 [琅環书生](https://chn.us.kg)
 
 [云游的小项目](https://www.yunyoujun.cn/projects/)
+
+[人潮汹涌模块修改](https://www.ta0t1e.com/posts/peoplecanvas.html)
+
