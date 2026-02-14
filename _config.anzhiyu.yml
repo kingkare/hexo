@@ -557,19 +557,19 @@ footer:
       #       link: /copyright/
   footerBar:
     enable: true
-    authorLink: /
+    authorLink: /about/
     cc:
       enable: false
       link: /copyright
     linkList:
       - link: https://github.com/anzhiyu-c/hexo-theme-anzhiyu
         text: 主题
-      # - link: https://image.anheyu.com
-      #   text: 图床
-      # - link: https://beian.miit.gov.cn/
-      #   text: 湘ICP备-xxxxxxx号
+      - link: https://image.anheyu.com
+        text: 图床
+      - link: https://beian.miit.gov.cn/
+        text: 湘ICP备-xxxxxxx号
     subTitle:
-      enable: false
+      enable: true
       # Typewriter Effect (打字效果)
       effect: true
       # Effect Speed Options (打字效果速度参数)
@@ -1346,7 +1346,8 @@ inject:
     # 自定义js
     # - <script src="/js/xxx"></script>
     - <script src="https://testingcf.jsdelivr.net/gh/kingkare/owo/js/Cherryblossoms.js"></script>  # 落樱特效js文件
-    - <script src="https://testingcf.jsdelivr.net/gh/kingkare/owo/js/fps.js"></script>  # FPS所需文件   
+    - <script src="https://testingcf.jsdelivr.net/gh/kingkare/owo/js/fps.js"></script>  # FPS所需文件
+    - <script async data-pjax src="https://cdn.jsdelivr.net/gh/kingkare/owo/js/Footer-Pets.js" defer></script> # 页脚宠物图       
 
 # CDN
 # Don't modify the following settings unless you know how they work
