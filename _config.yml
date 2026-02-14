@@ -163,8 +163,7 @@ abbrlink:
   force: false #启用强制模式，在这种模式下，插件将忽略缓存，并为每个帖子计算abbrlink，即使它已经有了abbrlink。
 
   # 固定链接配置结束
-<<<<<<< HEAD
-
+  
   # 留言板
 
   #envelope_comment
@@ -199,5 +198,3 @@ aplayer:
   meting: true
   asset_inject: false
 # 音乐馆结束 
-=======
->>>>>>> 70a733a0edd4456d4636835b5c4f0d4f7ea9da02
