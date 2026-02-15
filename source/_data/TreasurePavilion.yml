@@ -1,0 +1,80 @@
+- class_name: 📚 书籍
+  subclasses:
+    - class_desc: 🍅番茄小说
+      link_list:
+        - name: 开局长生不死，谁都以为我无敌 # 书籍名
+          img: https://p3-novel-sign.byteimg.com/novel-pic/p2o8a42d08651955a605291bd3ffbdb63a7~tplv-resize:225:300.image?lk3s=191c1ecc&x-expires=1771237439&x-signature=A51W0s1ysyNxt4kpgTMTdFiX94A%3D
+          score: 5
+          icon: fa-solid fa-book
+          tip: 番茄小说
+          url: https://fanqienovel.com/page/7263344278955363385 # 可以填写书籍的链接
+
+        - name: 模拟犯罪十万次，我竟成王牌神探
+          img: https://p9-novel-sign.byteimg.com/novel-pic/p2o7c1ad2733ad182d63d7428cff24fcca6~tplv-resize:225:300.image?lk3s=191c1ecc&x-expires=1771237626&x-signature=Kf63J35ZxTdT3JrzS5dESMnYJ8Y%3D
+          score: 4.5
+          icon: fa-solid fa-book
+          tip: 番茄小说
+          url: https://fanqienovel.com/page/7254152548817308731 # 可以填写书籍的链接
+
+        - name: 我在精神病院学斩神
+          img: https://p3-reading-sign.fqnovelpic.com/novel-pic/c5397e4a514736bb1c6754663dbee3db~tplv-resize:200:260.image?lk3s=68b6d46a&x-expires=1771154528&x-signature=GOP3%2Fp6mvIebM0WX2YhT%2FUFJKYs%3D
+          score: 4.5
+          icon: fa-solid fa-book
+          tip: 番茄小说
+          url: https://fanqienovel.com/page/6982529841564224526 # 可以填写书籍的链接
+
+        - name: 开局长生万古，苟到天荒地老
+          img: https://p3-novel-sign.byteimg.com/novel-pic/baa65a198607b52168aa1338740642f8~tplv-resize:225:300.image?lk3s=191c1ecc&x-expires=1771240441&x-signature=vZHTQ7P5nOJS6M0Px2O2Wf5YSBw%3D
+          score: 4.5
+          icon: fa-solid fa-book
+          tip: 番茄小说
+          url: https://fanqienovel.com/page/7147596144942517284 # 可以填写书籍的链接
+
+    
+    - class_desc: 网络小说
+      link_list:
+        - name: 诡秘之主
+          img: https://tse1-mm.cn.bing.net/th/id/OIP-C.gfcbclHdujKvz-LEm9rYOQAAAA?w=182&h=291&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3
+          score: 4
+          icon: fa-solid fa-laptop
+          tip: 奇幻
+          url: /posts/book3.html
+        - name: 斗破苍穹
+          img: https://example.com/image/book4.jpg
+          score: 4
+          icon: fa-solid fa-laptop
+          tip: 玄幻
+          url: /posts/book4.html
+    - class_desc: 流行文学
+      link_list:
+        - name: 三体
+          img: https://example.com/image/book5.jpg
+          score: 5
+          icon: fa-solid fa-star
+          tip: 科幻
+          url: /posts/book5.html
+        - name: 解忧杂货店
+          img: https://example.com/image/book6.jpg
+          score: 4
+          icon: fa-solid fa-star
+          tip: 小说
+          url: /posts/book6.html
+
+- class_name: 🎬 电影
+  subclasses:
+    - class_desc: 真人电影
+      link_list:
+        - name: 让子弹飞
+          img: https://example.com/image/movie1.jpg
+          score: 5
+          icon: fa-solid fa-film
+          tip: 喜剧
+          url: /posts/movie1.html
+    - class_desc: 动画电影
+      link_list:
+        - name: 无敌破坏王
+          img: https://example.com/image/movie2.jpg
+          score: 5
+          icon: fa-solid fa-film
+          tip: 动画
+          url: /posts/movie2.html

@@ -21,7 +21,8 @@ if !theme.disable_top_img && page.top_img !== false
 else
   - var top_img = false
   - var isHomeClass = 'not-top-img'
-header#page-header(class=`${isHomeClass}` style=home_index_img_bg)
+//- header#page-header(class=`${isHomeClass}` style=home_index_img_bg)
+header#page-header(class=`${isHomeClass}` style=`${top_img}`)
   !=partial('includes/header/nav', {}, {cache: true})
   if top_img !== false
     if is_post()

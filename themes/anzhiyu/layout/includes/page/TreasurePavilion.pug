@@ -1,0 +1,54 @@
+#article-container
+  .TreasurePavilion
+    - let TreasurePavilionPageContent = page.content
+    if site.data.TreasurePavilion
+      - let result = ""
+      each category in site.data.TreasurePavilion
+        - let className = category.class_name ? `<h2>${category.class_name}</h2>` : ""
+        - result += className
+        
+        if category.subclasses
+          each subclass in category.subclasses
+            - let classDesc = subclass.class_desc ? `<h3 class="TreasurePavilion-subtitle">${subclass.class_desc}</h3>` : ""
+            - let listResult = ""
+            
+            each item in subclass.link_list
+              - 
+                listResult += `
+                  <${item.url ? "a href='" + item.url + "'" : "div"} title="${item.name}" referrerPolicy="no-referrer" class="TreasurePavilion_box" style="${item.img?`background-image: url(${item.img})`:'background-color: #333;'}">
+                      <div class="TreasurePavilion_top">
+                        <i class="${item.icon?item.icon:'fa-solid fa-film'}"></i>
+                        <span>${item.tip?item.tip:'项目'}</span>
+                      </div>
+                      <div class="TreasurePavilion_content">
+                        <span>${item.name?item.name:'未知'}</span>
+                        <div>${item.score?toStar(item.score):toStar(0)}</div>
+                      </div>
+                    </${item.url?"a":"div"}>
+                `
+              -
+            - result += `${classDesc} <div class="TreasurePavilion-list">${listResult}</div>`
+        else
+          // 兼容旧格式（没有subclasses的情况）
+          - let classDesc = category.class_desc ? `<div class="TreasurePavilion-desc">${category.class_desc}</div>` : ""
+          - let listResult = ""
+          
+          each item in category.link_list
+            - 
+              listResult += `
+                <${item.url ? "a href='" + item.url + "'" : "div"} title="${item.name}" referrerPolicy="no-referrer" class="TreasurePavilion_box" style="${item.img?`background-image: url(${item.img})`:'background-color: #333;'}">
+                    <div class="TreasurePavilion_top">
+                      <i class="${item.icon?item.icon:'fa-solid fa-film'}"></i>
+                      <span>${item.tip?item.tip:'项目'}</span>
+                    </div>
+                    <div class="TreasurePavilion_content">
+                      <span>${item.name?item.name:'未知'}</span>
+                      <div>${item.score?toStar(item.score):toStar(0)}</div>
+                    </div>
+                  </${item.url?"a":"div"}>
+              `
+            -
+          - result += `${classDesc} <div class="TreasurePavilion-list">${listResult}</div>`
+      
+      - TreasurePavilionPageContent = TreasurePavilionPageContent + result
+    != TreasurePavilionPageContent
