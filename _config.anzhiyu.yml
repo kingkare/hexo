@@ -15,7 +15,7 @@ menu:
     # 追番页: /bangumis/ || anzhiyu-icon-bilibili
     相册集: /album/ || anzhiyu-icon-images
     小空调: /air-conditioner/ || anzhiyu-icon-fan
-    藏宝阁: /TreasurePavilion/ || anzhiyu-icon-box      
+    藏宝阁: /TreasurePavilion/ || anzhiyu-icon-cube faa-tada  
 
   关于:
     关于本人: /about/ || anzhiyu-icon-paper-plane
