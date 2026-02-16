@@ -32,7 +32,7 @@
     "hexo-wordcount": "^6.0.1",
     "pug": "^3.0.3",
     "pwa-asset-generator": "^8.1.2",
-    "swpp-backends": "^3.0.0",
+    "swpp-backends": "^3.1.1",
     "yamljs": "^0.3.0"
   },
   "overrides": {
