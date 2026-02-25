@@ -55,6 +55,41 @@
           icon: fa-solid fa-film
           tip: 剧情 / 喜剧
           url: https://movie.douban.com/subject/37375594/?from=showing
+
+        - name: 飞驰人生3 (2026)
+          img: https://i.meee.com.tw/I9rrNGD.png
+          score: 4
+          icon: fa-solid fa-film
+          tip: 剧情 / 喜剧 / 运动
+          url: https://movie.douban.com/subject/37311135/?from=showing
+
+        - name: 寻秦记 (2025)
+          img: https://i.meee.com.tw/22EfCzu.png
+          score: 4
+          icon: fa-solid fa-film
+          tip: 动作 / 奇幻 / 古装
+          url: https://movie.douban.com/subject/26389539/
+
+        - name: 熊猫计划之部落奇遇记 (2026)
+          img: https://i.meee.com.tw/qFH5J9b.png
+          score: 4
+          icon: fa-solid fa-film
+          tip: 喜剧 / 奇幻
+          url: https://movie.douban.com/subject/37211128/?from=showing
+
+        - name: 过家家 (2026)
+          img: https://i.meee.com.tw/HNFnCmn.png
+          score: 4
+          icon: fa-solid fa-film
+          tip: 剧情
+          url: https://movie.douban.com/subject/36790513/
+
+        - name: 爆水管 (2026)
+          img: https://i.meee.com.tw/jDA7UGo.png
+          score: 4
+          icon: fa-solid fa-film
+          tip: 喜剧 / 犯罪
+          url: https://movie.douban.com/subject/37134618/
     
     - class_desc: 🎬 动画电影
       link_list:
@@ -64,3 +99,31 @@
           icon: fa-solid fa-film
           tip: 动画
           url: https://hamivideo.hinet.net/product/317256.do?cs=2
+
+        - name: 航海王：薩波篇 3兄弟的羈絆 奇蹟的再會和被繼承的意志
+          img: https://i.meee.com.tw/w74UAM6.png
+          score: 5
+          icon: fa-solid fa-film
+          tip: 动画
+          url: https://hamivideo.hinet.net/product/317311.do?cs=2
+
+        - name: 航海王：跨越艾斯之死 魯夫與伙伴的誓約
+          img: https://i.meee.com.tw/1yymksH.png
+          score: 5
+          icon: fa-solid fa-film
+          tip: 动画
+          url: https://hamivideo.hinet.net/product/317260.do?cs=2
+
+        - name: 織女落凡塵
+          img: https://i.meee.com.tw/pEm9T6z.png
+          score: 5
+          icon: fa-solid fa-film
+          tip: 动画
+          url: https://hamivideo.hinet.net/product/316196.do?cs=2
+
+        - name: 熊出沒之重啟未來
+          img: https://i.meee.com.tw/j69g5JH.png
+          score: 5
+          icon: fa-solid fa-film
+          tip: 动画
+          url: https://hamivideo.hinet.net/product/315106.do?cs=2
