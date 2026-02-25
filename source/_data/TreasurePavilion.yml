@@ -49,18 +49,18 @@
   subclasses:
     - class_desc: 🎬 真人电影
       link_list:
-        - name: 让子弹飞
-          img: https://example.com/image/movie1.jpg
-          score: 5
+        - name: 夜王
+          img: https://i.meee.com.tw/RQ0G1c3.png
+          score: 4
           icon: fa-solid fa-film
-          tip: 喜剧
-          url: /posts/movie1.html
+          tip: 剧情 / 喜剧
+          url: https://movie.douban.com/subject/37375594/?from=showing
     
     - class_desc: 🎬 动画电影
       link_list:
-        - name: 无敌破坏王
-          img: https://example.com/image/movie2.jpg
+        - name: 航海王：迷霧島大冒險
+          img: https://i.meee.com.tw/zqP2OHW.png
           score: 5
           icon: fa-solid fa-film
           tip: 动画
-          url: /posts/movie2.html
+          url: https://hamivideo.hinet.net/product/317256.do?cs=2
