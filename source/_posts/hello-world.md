@@ -22,3 +22,4 @@ tags:
 
 [仿 Heo 部分元素添加卡片式信息外框](https://blog.gbfun.cc/posts/e3515228.html)
 
+[搭建小空调页面](https://sanbaiblog.cn/2025/02/25/给你的博客搭建小空调页面/)
