@@ -1,0 +1,13 @@
+if hexo-config('preloader.enable')
+  if hexo-config('preloader.source') == '1'
+    @import './load_style/default'
+  else if hexo-config('preloader.source') == '2'
+    @import './load_style/default'
+  else if hexo-config('preloader.source') == '3'
+    @import './load_style/default'
+  else if hexo-config('preloader.source') == '4'
+    @import './load_style/clickenter'
+  else if hexo-config('preloader.source') == '5'
+    @import './load_style/clickenter'
+  else
+    @import './load_style/default'

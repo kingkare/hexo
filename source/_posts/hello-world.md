@@ -24,5 +24,4 @@ tags:
 
 [搭建小空调页面](https://sanbaiblog.cn/2025/02/25/给你的博客搭建小空调页面/)
 
-[云游的小项目们](https://www.yunyoujun.cn/projects/)
 

@@ -822,8 +822,11 @@ preloader:
   # 来源
   # 1. 全屏加载
   # 2. 进度（进度条）
+  # 3. 全屏加载 + 进度条
+  # 4. 全屏加载（点击进入）
+  # 5. 全屏加载（点击进入） + 进度条  
   # 否则全部
-  source: 3
+  source: 5
   # 节奏主题 (see https://codebyzach.github.io/pace/)
   pace_css_url:
   avatar: https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg # 自定加载动画义头像
@@ -1344,7 +1347,8 @@ inject:
     - <link rel="stylesheet" href="/css/todolist.css"> # 待办清单页
     - <link rel="stylesheet" href="https://testingcf.jsdelivr.net/gh/kingkare/owo/css/fps.css"> # FPS所需文件
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kingkare/owo/css/polish-animation.css"> # 主页文章卡片添加擦亮动画效果
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kingkare/owo/css/Personal-card-beautification.css"> # 个人卡片美化                     
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kingkare/owo/css/Personal-card-beautification.css"> # 个人卡片美化
+    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kingkare/owo/css/all.css"> # loading加载动画魔改用的fontawesome图标                          
 
   bottom:
     # 自定义js
