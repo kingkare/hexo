@@ -1363,7 +1363,7 @@ inject:
     - <link rel="stylesheet" href="https://testingcf.jsdelivr.net/gh/kingkare/owo/css/polish-animation.css"> # 主页文章卡片添加擦亮动画效果
     - <link rel="stylesheet" href="https://testingcf.jsdelivr.net/gh/kingkare/owo/css/Personal-card-beautification.css"> # 个人卡片美化
     - <link rel="stylesheet" href="https://testingcf.jsdelivr.net/gh/kingkare/owo/css/all.css"> # loading加载动画魔改用的fontawesome图标
-    - <link rel="stylesheet" href="https://testingcf.jsdelivr.net/gh/kingkare/owo/css/index_media.css"> #   首页顶部视频背景所需文件                              
+    - <link rel="stylesheet" href="https://testingcf.jsdelivr.net/gh/kingkare/owo/css/index_media.css"> #   首页顶部视频背景所需文件
 
   bottom:
     # 自定义js
