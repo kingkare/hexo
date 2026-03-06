@@ -56,8 +56,8 @@ mourn:
 highlight_theme: mac #  darker-深黑/Pale Night-苍夜/Light-浅色/Ocean-海洋/Mac-Mac 风格/Mac Light-Mac 亮色/False-关 / 否
 highlight_copy: true # 复制按钮是否开启
 highlight_lang: true # 显示代码语言是否开启
-highlight_shrink: true # true：缩小代码块 / false：展开代码块 | none：展开代码块并隐藏按钮 | 代码框不展开，需点击 '>' 打开
-highlight_height_limit: 330 # 代码高度限制 单位: px 直接添加数字，如330 可配置为 false
+highlight_shrink: false # true：缩小代码块 / false：展开代码块 | none：展开代码块并隐藏按钮 | 代码框不展开，需点击 '>' 打开
+highlight_height_limit: 200 # 代码高度限制 单位: px 直接添加数字，如330 可配置为 false
 code_word_wrap: true  # 代码换行是否开启
 
 # copy settings
