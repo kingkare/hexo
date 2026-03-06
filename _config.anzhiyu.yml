@@ -156,10 +156,24 @@ avatar:
 # Disable all banner image
 disable_top_img: false
 
-# The banner image of home page
-index_img: false # "background: url() top / cover no-repeat"
+# 首页横幅图片/视频
+# index_img: false # "background: url() top / cover no-repeat"
+index_img:
+  enable: false
+  path: https://tc.ayakasuki.com/a/2025/06/11/biji684950edcabc4.png
+  vpath: https://tc.ayakasuki.com/a/2025/06/11/biji684950efea626.png
 
-# If the banner of page not setting, it will show the top_img
+
+index_video:
+
+  enable: true # 视频总开关
+  path:   https://vindicate.s3.bitiful.net/2d0d6f28f98b0fc6b91a089542da813d.mp4?no-wait=on
+  poster: https://testingcf.jsdelivr.net/gh/kingkare/owo/img/loading.gif # 视频加载时动画
+  vpath: https://yun.ayakasuki.com/index.php?explorer/share/file&hash=9f25EPDmi9bScfWMCm_r061iw-lKwpKEaT6OZzv7dUyBSh75x_4KrNHSuaD6VW2ehSl-xw  # 新增竖屏视频
+  vposter: https://testingcf.jsdelivr.net/gh/kingkare/owo/img/loading.gif  # 竖屏视频加载时动画
+
+
+# 如果页面横幅未设置，则会显示 top_img。
 default_top_img: false
 
 # 文章封面开始
@@ -1346,17 +1360,19 @@ inject:
     - <link rel="stylesheet" href="/css/Custom.css"> # 自定义CSS    
     - <link rel="stylesheet" href="/css/todolist.css"> # 待办清单页
     - <link rel="stylesheet" href="https://testingcf.jsdelivr.net/gh/kingkare/owo/css/fps.css"> # FPS所需文件
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kingkare/owo/css/polish-animation.css"> # 主页文章卡片添加擦亮动画效果
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kingkare/owo/css/Personal-card-beautification.css"> # 个人卡片美化
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kingkare/owo/css/all.css"> # loading加载动画魔改用的fontawesome图标                          
+    - <link rel="stylesheet" href="https://testingcf.jsdelivr.net/gh/kingkare/owo/css/polish-animation.css"> # 主页文章卡片添加擦亮动画效果
+    - <link rel="stylesheet" href="https://testingcf.jsdelivr.net/gh/kingkare/owo/css/Personal-card-beautification.css"> # 个人卡片美化
+    - <link rel="stylesheet" href="https://testingcf.jsdelivr.net/gh/kingkare/owo/css/all.css"> # loading加载动画魔改用的fontawesome图标
+    - <link rel="stylesheet" href="https://testingcf.jsdelivr.net/gh/kingkare/owo/css/index_media.css"> #   首页顶部视频背景所需文件                              
 
   bottom:
     # 自定义js
     # - <script src="/js/xxx"></script>
     - <script src="https://testingcf.jsdelivr.net/gh/kingkare/owo/js/Cherryblossoms.js"></script>  # 落樱特效js文件
     - <script src="https://testingcf.jsdelivr.net/gh/kingkare/owo/js/fps.js"></script>  # FPS所需文件
-    - <script async data-pjax src="https://cdn.jsdelivr.net/gh/kingkare/owo/js/Footer-Pets.js" defer></script> # 页脚宠物图
-    - <script src="https://cdn.jsdelivr.net/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # 背景切换弹
+    - <script async data-pjax src="https://testingcf.jsdelivr.net/gh/kingkare/owo/js/Footer-Pets.js" defer></script> # 页脚宠物图
+    - <script src="https://testingcf.jsdelivr.net/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script> # 背景切换弹
+    - <script src="https://testingcf.jsdelivr.net/gh/kingkare/owo/js/index_media.js"></script> # 首页顶部视频背景所需文件   
     - <script src="/js/custom.js"></script> # 这个代表自定义js，放在最下面       
 
 # CDN

@@ -1,18 +1,25 @@
+// 优先级控制逻辑（独立作用域）
 if !theme.disable_top_img && page.top_img !== false
   if is_post()
     - var top_img = page.top_img || page.cover || page.randomcover
   else if is_page()
     - var top_img = page.top_img || theme.default_top_img
   else if is_home()
-    - var top_img = theme.index_img !== false ? theme.index_img || theme.default_top_img : false
-    - var home_index_img = theme.index_img !== false ? theme.index_img || theme.default_top_img : false
+    // 首页专用媒体声明（网页5）
+    - var home_index_img = theme.index_img?.enable ? theme.index_img.path : false
+    - var home_index_video = theme.index_video?.enable ? theme.index_video.path : false
+    - var top_img = home_index_img || home_index_video || theme.default_top_img
   else
     - var top_img = page.top_img || theme.default_top_img
 
   if top_img !== false
+    // 路径处理（保留原有逻辑）
     - var imgSource = top_img && top_img.indexOf('/') !== -1 ? url_for(top_img) : top_img
-    - var bg_img = top_img ? imgSource : ''
-    - var home_index_img_bg = home_index_img ? home_index_img : ''
+    // 首页专用路径（网页3）
+    - var homeImg = home_index_img ? url_for(home_index_img) : ''
+    - var homeVideo = home_index_video ? url_for(home_index_video) : ''
+    - var bg_img = is_home() ? (home_index_img || home_index_video) : imgSource
+
     - var site_title = page.title || page.tag || page.category || config.title
     - var isHomeClass = is_home() ? 'full_page' : 'not-home-page'
     - is_post() ? isHomeClass = 'post-bg' : isHomeClass
@@ -21,8 +28,8 @@ if !theme.disable_top_img && page.top_img !== false
 else
   - var top_img = false
   - var isHomeClass = 'not-top-img'
-//- header#page-header(class=`${isHomeClass}` style=home_index_img_bg)
-header#page-header(class=`${isHomeClass}` style=`${top_img}`)
+
+header#page-header(class=`${isHomeClass}`)
   !=partial('includes/header/nav', {}, {cache: true})
   if top_img !== false
     if is_post()
@@ -42,19 +49,28 @@ header#page-header(class=`${isHomeClass}` style=`${top_img}`)
                 use(href='#gentle-wave', x='48', y='7')
         #post-top-cover
           img#post-top-bg(class='nolazyload' src=bg_img)
-
-    else if is_home() 
-      #site-info
-        h1#site-title=site_title
-        if theme.subtitle.enable
-          - var loadSubJs = true
-          #site-subtitle
-            span#subtitle
-        if(theme.social)
-          #site_social_icons
-            !=fragment_cache('social', function(){return partial('includes/header/social')})
-      #scroll-down
-        i.anzhiyufont.anzhiyu-icon-angle-down.scroll-down-effects
+    else if is_home()
+        // 媒体容器（继承原主题背景参数）
+        #home-media-container(
+            data-landscape-img=home_index_img ? homeImg : ''
+            data-portrait-img=home_index_img && theme.index_img.vpath ? url_for(theme.index_img.vpath) : ''
+            data-landscape-video=home_index_video ? homeVideo : ''
+            data-portrait-video=home_index_video && theme.index_video.vpath ? url_for(theme.index_video.vpath) : ''
+            data-landscape-poster=home_index_video && theme.index_video.poster ? url_for(theme.index_video.poster) : ''
+            data-portrait-poster=home_index_video && theme.index_video.vposter ? url_for(theme.index_video.vposter) : ''
+            style="height:100%;background-attachment:fixed;z-index:0"
+          )
+        #site-info
+          h1#site-title=site_title
+          if theme.subtitle.enable
+            - var loadSubJs = true
+            #site-subtitle
+              span#subtitle
+          if(theme.social)
+            #site_social_icons
+              !=fragment_cache('social', function(){return partial('includes/header/social')})
+        #scroll-down
+          i.anzhiyufont.anzhiyu-icon-angle-down.scroll-down-effects
     else
-      #page-site-info
+      #page-site-info(style=`background-image: url(${imgSource})`)
         h1#site-title=site_title
