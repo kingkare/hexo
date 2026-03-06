@@ -1,16 +1,16 @@
 ---
-abbrlink: 魔改之 index_img 兼容视频
+abbrlink: 326c6e68
 categories:
-- - 教程
+  - - 教程
 date: '2026-03-07T01:02:00.562731+08:00'
 tags:
-- hexo
-- 魔改
-- 教程
-- 美化
-- 安知鱼
-- anzhiyu
-- 视频
+  - hexo
+  - 魔改
+  - 教程
+  - 美化
+  - 安知鱼
+  - anzhiyu
+  - 视频
 title: 安知鱼主题魔改之 index_img 兼容视频展示
 updated: '2026-03-07T01:02:01.014+08:00'
 ---
