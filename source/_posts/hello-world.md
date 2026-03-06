@@ -1,8 +1,10 @@
 ---
+abbrlink: '9408'
+categories: []
+date: '2026-02-09T03:11:37+08:00'
+tags: []
 title: hello-world
-abbrlink: 9408
-date: 2026-02-09 03:11:37
-tags:
+updated: '2026-03-07T00:33:20.171+08:00'
 ---
 [原版博客](https://blog.liushen.fun/posts/1dfd1f41/)
 
@@ -24,4 +26,6 @@ tags:
 
 [搭建小空调页面](https://sanbaiblog.cn/2025/02/25/给你的博客搭建小空调页面/)
 
+[自定义加载动画魔改方案](https://satera.cn/posts/ee511e53/)
 
+[安知鱼主题魔改之 index_img 兼容视频展示](https://ayakasuki.com/posts/3a7bad23/)
