@@ -53,9 +53,8 @@ updated: '2026-03-07T01:53:15.916+08:00'
 
 #### 仅渐变式加载
 
-`
 
-```
+```js
 /**
  * @description 实现medium的渐进加载背景的效果
  */
@@ -166,13 +165,12 @@ updated: '2026-03-07T01:53:15.916+08:00'
   });
 
 })();
-````
+```
 
 #### 渐变式一图流
 
-`
 
-```
+```js
 // 首页头图加载优化
 /**
  * @description 实现medium的渐进加载背景的效果
@@ -286,7 +284,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("pjax:complete", function() {
   onPJAXComplete(config);
 });
-````
+```
 
 ### 新建css文件
 
@@ -294,9 +292,8 @@ document.addEventListener("pjax:complete", function() {
 
 #### 仅渐变式加载
 
-`
 
-```
+```css
 /* 首页头图加载 */  
 .pl-container {  
   width: 100%;  
@@ -349,13 +346,12 @@ document.addEventListener("pjax:complete", function() {
   /* 小图锯齿多，增加高斯模糊 */  
   filter: blur(50px);  
 }
-````
+```
 
 #### 渐变式一图流
 
-`
 
-```
+```css
 /* 首页头图加载 */
 body[data-type=anzhiyu] #nav,body[data-type=anzhiyu] #scroll-down,body[data-type=anzhiyu] #site-info {
   -webkit-animation: scale 2.2s cubic-bezier(.6,.1,.25,1) .5s 1 backwards;
@@ -448,41 +444,39 @@ body[data-type=anzhiyu] #nav,body[data-type=anzhiyu] #scroll-down,body[data-type
     /* 小图锯齿多，增加高斯模糊 */
     filter: blur(50px);
   }
-````
+```
 
 ### 2、引入文件
 
 > 在_config.anzhiyu.yml主题配置文件下inject配置项中head和bottom处
 > 分别引入imgloaded.css和imgloaded.js文件
 
-`
 
-```
+```yml
+
 inject:  
   head:  
     - <link rel="stylesheet" href="/css/imgloaded.css?1">  
   
   bottom:  
     - <script async data-pjax src="/js/imgloaded.js?1"></script> # 首页图片渐进式加载
-````
+```
 
 ### 3、配置图片
 
 > 务必记得在主题配置文件中开启顶部图的功能，就像这样配置空链接。
 
-`
 
-```
+```yml
 # The banner image of home page  
 index_img: "background: url() top / cover no-repeat"
-````
+```
 
 > 在imgloaded.js中的73到76行（或是83到86行）修改以下示例的部分
 > 配置自己的图片，可以是图片直链也可以是本地路径
 
-`
 
-```
+```js
 const config = {  
   smallSrc: '/img/xiaotu.jpg', // 小图链接 尽可能配置小于100k的图片  
   largeSrc: '/img/tu.jpg', // 大图链接 最终显示的图片  
@@ -490,7 +484,7 @@ const config = {
   mobileLargeSrc: '/img/sjdt.jpg', // 手机端大图链接 最终显示的图片  
   enableRoutes: ['/'],  
   };
-````
+```
 
 ### 4、图片懒加载配置修改
 
@@ -498,16 +492,15 @@ const config = {
 > 在主题配置文件中找到`# Lazyload`，将`field`项改为`post`，`blur`维持`true`
 
 
-`
+```yml
 
-```
 lazyload:
   enable: true
   field: post # site/post
   placeholder:
   blur: true
   progressive: true
-````
+```
 
 ### 5、大功告成
 
@@ -522,16 +515,15 @@ lazyload:
 2. 如果大图的下边界有不透明度变化，模糊小图，小图会超出不透明度范围，露出小图
 3. 如果开了夜间模式，是因为由夜间模式的阅读模式叠加一层0.3的alpha，具体是blog\themes\anzhiyu\source\css_mode\darkmode.styl文件里的background-color: alpha($dark-black, 0.3)，改为
 
-`
 
-```
+```styl
 background-image: linear-gradient(
   to bottom,
   rgba($dark-black, 0.1) 0%, 
   rgba($dark-black, 0) 75%,
   rgba($dark-black, 0) 100%  
 );
-````
+```
 
 原教程链接：
 
