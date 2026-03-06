@@ -165,3 +165,18 @@ summary {
 .sjtoggle>.sjtoggle-content {
     margin: 1rem;
 }
+
+/*修复代码高亮  给 <code> 添加基础 CSS 样式（兜底）*/
+
+p code,
+li code
+  padding: 0.2em 0.4em
+  margin: 0
+  font-size: 85%
+  background-color: rgba(27,31,35,0.05)
+  border-radius: 6px
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace
+  word-break: break-all
+
+
+
