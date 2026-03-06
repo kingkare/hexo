@@ -13,7 +13,7 @@ timezone: ''
 
 # URL 永久链接
 url: https://www.houyi.us.ci      #请在此处设置您的网站网址。例如，如果您使用 GitHub Pages，请将网址设置为“https://username.github.io/project”。
-permalink: posts/:abbrlink/  #文章结尾不带 .html
+permalink: posts/:abbrlink/ #文章结尾不带 .html
 permalink_defaults:
 pretty_urls:
   trailing_index: false # 设置为false可从永久链接中删除尾随的“index.html”
@@ -149,20 +149,20 @@ hexo_safego:
 # https://github.com/rozbo/hexo-abbrlink
 # abbrlink config
 abbrlink:
-  alg: crc32 # 支持 CRC16（默认）和 CRC32
-  rep: hex #支持十进制（默认）和十六进制
+  alg: crc32 #support crc16(default) and crc32
+  rep: hex #support dec(default) and hex
   drafts: false #(true)处理草稿，(false)不处理草稿。false（默认值）
   # 从目录树生成类别
   # 深度：要生成的目录树的最大深度应大于0
   auto_category:
-    enable: true #true(默认值)
-    depth: #3(默认值)
+    enable: true #true(default)
+    depth: #3(default)
     over_write: false
   auto_title: false #启用自动标题，可以按路径自动填充标题
   auto_date: false #启用自动日期，它可以自动填写日期的时间今天
-  force: false #启用强制模式，在这种模式下，插件将忽略缓存，并为每个帖子计算abbrlink，即使它已经有了abbrlink。
+  force: true #启用强制模式，在这种模式下，插件将忽略缓存，并为每个帖子计算abbrlink，即使它已经有了abbrlink。
 
-  # 固定链接配置结束
+# 固定链接配置结束
   
   # 留言板
 
