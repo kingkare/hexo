@@ -3,6 +3,7 @@ abbrlink: anzhiyu的分页顶图兼容mp4视频
 categories:
 - - 教程
 date: '2026-03-08T01:03:22.693349+08:00'
+excerpt: 正篇  首先找到“主题目录\anzhiyu\layout\includes\page\essay.pug”  -      .author-content.author-content-item.essayPage.single(style = i.top_background ? `background: url(${i.top_background}) left 28% / cover no-...
 tags:
 - anzhiyu
 - 安知鱼
@@ -11,13 +12,11 @@ tags:
 - hexo
 - 视频
 title: 让anzhiyu的分页顶图兼容mp4视频
-updated: '2026-03-08T01:03:23.252+08:00'
+updated: '2026-03-08T02:07:48.561+08:00'
 ---
 # 正篇
 
 > 首先找到“主题目录\anzhiyu\layout\includes\page\essay.pug”
-
-## 修改如下
 
 ```pug
 -      .author-content.author-content-item.essayPage.single(style = i.top_background ? `background: url(${i.top_background}) left 28% / cover no-repeat;` : "")
@@ -28,7 +27,6 @@ updated: '2026-03-08T01:03:23.252+08:00'
 ```
 
 > 修改完毕，在essay.yml的顶部配置项的top\_background，现在也可以调用mp4视频了
-
 
 以上拿的即可短文页面举例 其他举一反三！
 
