@@ -19,7 +19,7 @@ updated: '2026-03-08T01:03:23.252+08:00'
 
 ## 修改如下
 
-```
+```pug
 -      .author-content.author-content-item.essayPage.single(style = i.top_background ? `background: url(${i.top_background}) left 28% / cover no-repeat;` : "")
 +      .author-content.author-content-item.essayPage.single(style = i.top_background && !i.top_background.endsWith('.mp4') ? `background: url(${i.top_background}) left 28% / cover no-repeat;` : "")
 +        if i.top_background && i.top_background.endsWith('.mp4')
