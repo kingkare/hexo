@@ -160,7 +160,7 @@ abbrlink:
     over_write: false
   auto_title: false #启用自动标题，可以按路径自动填充标题
   auto_date: false #启用自动日期，它可以自动填写日期的时间今天
-  force: true #启用强制模式，在这种模式下，插件将忽略缓存，并为每个帖子计算abbrlink，即使它已经有了abbrlink。
+  force: false #启用强制模式，在这种模式下，插件将忽略缓存，并为每个帖子计算abbrlink，即使它已经有了abbrlink。
 
 # 固定链接配置结束
   

@@ -44,3 +44,39 @@ updated: '2026-03-08T02:44:58.948+08:00'
 [郭乐](https://www.guole.fun)
 
 [https://github.com/MSCMDD/Qexo-Talks](https://github.com/MSCMDD/Qexo-Talks)
+
+[外挂标签](https://akilar.top/posts/615e2dec/)
+
+{% link 外挂标签, https://akilar.top/posts/615e2dec/, /img/siteicon/favicon.ico %}
+
+1. 带 {% u 下划线 %} 的文本
+2. 带 {% emp 着重号 %} 的文本
+3. 带 {% wavy 波浪线 %} 的文本
+4. 带 {% del 删除线 %} 的文本
+5. 键盘样式的文本 {% kbd command %} + {% kbd D %}
+6. 密码样式的文本：{% psw 这里没有验证码 %}
+
+
+{% tabs test1 %}
+<!-- tab -->
+**This is Tab 1.**
+<!-- endtab -->
+
+<!-- tab -->
+**This is Tab 2.**
+<!-- endtab -->
+
+<!-- tab -->
+**This is Tab 3.**
+<!-- endtab -->
+{% endtabs %}
+
+
+{% sitegroup %}
+{% site xaoxuu, url=https://xaoxuu.com, screenshot=https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg, avatar=https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png, description=简约风格 %}
+{% site inkss, url=https://inkss.cn, screenshot=https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, avatar=https://cdn.jsdelivr.net/gh/inkss/common@master/static/web/avatar.jpg, description=这是一段关于这个网站的描述文字 %}
+{% site MHuiG, url=https://blog.mhuig.top, screenshot=https://i.loli.net/2020/08/22/d24zpPlhLYWX6D1.png, avatar=https://cdn.jsdelivr.net/gh/MHuiG/imgbed@master/data/p.png, description=这是一段关于这个网站的描述文字 %}
+{% site Colsrch, url=https://colsrch.top, screenshot=https://i.loli.net/2020/08/22/dFRWXm52OVu8qfK.png, avatar=https://cdn.jsdelivr.net/gh/Colsrch/images/Colsrch/avatar.jpg, description=这是一段关于这个网站的描述文字 %}
+{% site Linhk1606, url=https://linhk1606.github.io, screenshot=https://i.loli.net/2020/08/21/3PmGLCKicnfow1x.png, avatar=https://i.loli.net/2020/02/09/PN7I5RJfFtA93r2.png, description=这是一段关于这个网站的描述文字 %}
+{% endsitegroup %}
+
