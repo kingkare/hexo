@@ -49,6 +49,8 @@ updated: '2026-03-08T02:44:58.948+08:00'
 
 {% link 外挂标签, https://akilar.top/posts/615e2dec/, /img/siteicon/favicon.ico %}
 
+{% link butterfly文章页面上下篇按钮UI调整, https://akilar.top/posts/b77e1c58/, /img/siteicon/favicon.ico %}
+
 1. 带 {% u 下划线 %} 的文本
 2. 带 {% emp 着重号 %} 的文本
 3. 带 {% wavy 波浪线 %} 的文本
