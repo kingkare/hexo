@@ -5,7 +5,7 @@ date: '2026-02-09T03:11:37+08:00'
 excerpt: 原版博客 LiuShen表情包收集 Hexo配置SWPP实现PWA 耗子面板和DPanel简单体验 琅環书生 云游的小项目 人潮汹涌模块修改 从Moments迁移到Ech0 仿 Heo 部分元素添加卡片式信息外框 搭建小空调页面 自定义加载动画魔改方案 安知鱼主题魔改之 index_img 兼容视频展示 开发者必备：高质量随机图 API 汇总与使用指南 告别固定背景：搭建动态随机图接口  以下为待...
 tags: []
 title: hello-world
-updated: '2026-03-08T02:44:58.948+08:00'
+updated: '2026-03-08T03:45:27.865+08:00'
 ---
 [原版博客](https://blog.liushen.fun/posts/1dfd1f41/)
 
@@ -51,6 +51,13 @@ updated: '2026-03-08T02:44:58.948+08:00'
 
 {% link butterfly文章页面上下篇按钮UI调整, https://akilar.top/posts/b77e1c58/, /img/siteicon/favicon.ico %}
 
+{% link 我的Blog美化日记——Hexo+Butterfly, https://blog.guole.fun/posts/butterfly-custom/, /img/siteicon/favicon.ico %}
+
+{% Akilarlxh/Tag_Plugins, 其它参数（可选） %}
+
+
+
+
 1. 带 {% u 下划线 %} 的文本
 2. 带 {% emp 着重号 %} 的文本
 3. 带 {% wavy 波浪线 %} 的文本
@@ -58,21 +65,27 @@ updated: '2026-03-08T02:44:58.948+08:00'
 5. 键盘样式的文本 {% kbd command %} + {% kbd D %}
 6. 密码样式的文本：{% psw 这里没有验证码 %}
 
-
 {% tabs test1 %}
+
 <!-- tab -->
+
 **This is Tab 1.**
+
 <!-- endtab -->
 
 <!-- tab -->
+
 **This is Tab 2.**
+
 <!-- endtab -->
 
 <!-- tab -->
-**This is Tab 3.**
-<!-- endtab -->
-{% endtabs %}
 
+**This is Tab 3.**
+
+<!-- endtab -->
+
+{% endtabs %}
 
 {% sitegroup %}
 {% site xaoxuu, url=https://xaoxuu.com, screenshot=https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg, avatar=https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png, description=简约风格 %}
@@ -81,4 +94,3 @@ updated: '2026-03-08T02:44:58.948+08:00'
 {% site Colsrch, url=https://colsrch.top, screenshot=https://i.loli.net/2020/08/22/dFRWXm52OVu8qfK.png, avatar=https://cdn.jsdelivr.net/gh/Colsrch/images/Colsrch/avatar.jpg, description=这是一段关于这个网站的描述文字 %}
 {% site Linhk1606, url=https://linhk1606.github.io, screenshot=https://i.loli.net/2020/08/21/3PmGLCKicnfow1x.png, avatar=https://i.loli.net/2020/02/09/PN7I5RJfFtA93r2.png, description=这是一段关于这个网站的描述文字 %}
 {% endsitegroup %}
-
