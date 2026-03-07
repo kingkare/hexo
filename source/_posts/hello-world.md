@@ -5,7 +5,7 @@ date: '2026-02-09T03:11:37+08:00'
 excerpt: 原版博客 LiuShen表情包收集 Hexo配置SWPP实现PWA 耗子面板和DPanel简单体验 琅環书生 云游的小项目 人潮汹涌模块修改 从Moments迁移到Ech0 仿 Heo 部分元素添加卡片式信息外框 搭建小空调页面 自定义加载动画魔改方案 安知鱼主题魔改之 index_img 兼容视频展示 开发者必备：高质量随机图 API 汇总与使用指南 告别固定背景：搭建动态随机图接口  以下为待...
 tags: []
 title: hello-world
-updated: '2026-03-08T03:49:16.667+08:00'
+updated: '2026-03-08T03:53:40.772+08:00'
 ---
 [原版博客](https://blog.liushen.fun/posts/1dfd1f41/)
 
@@ -91,7 +91,11 @@ updated: '2026-03-08T03:49:16.667+08:00'
 {% sitegroup %}
 {% site xaoxuu, url=https://xaoxuu.com, screenshot=https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg, avatar=https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png, description=简约风格 %}
 {% site inkss, url=https://inkss.cn, screenshot=https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, avatar=https://cdn.jsdelivr.net/gh/inkss/common@master/static/web/avatar.jpg, description=这是一段关于这个网站的描述文字 %}
+
 {% site MHuiG, url=https://blog.mhuig.top, screenshot=https://i.loli.net/2020/08/22/d24zpPlhLYWX6D1.png, avatar=https://cdn.jsdelivr.net/gh/MHuiG/imgbed@master/data/p.png, description=这是一段关于这个网站的描述文字 %}
 {% site Colsrch, url=https://colsrch.top, screenshot=https://i.loli.net/2020/08/22/dFRWXm52OVu8qfK.png, avatar=https://cdn.jsdelivr.net/gh/Colsrch/images/Colsrch/avatar.jpg, description=这是一段关于这个网站的描述文字 %}
 {% site Linhk1606, url=https://linhk1606.github.io, screenshot=https://i.loli.net/2020/08/21/3PmGLCKicnfow1x.png, avatar=https://i.loli.net/2020/02/09/PN7I5RJfFtA93r2.png, description=这是一段关于这个网站的描述文字 %}
+
+{% site Linhk1606, url=https://github.com/Akilarlxh/Tag_Plugins?tab=readme-ov-file, screenshot=https://vindicate.s3.bitiful.net/hyimg/26/3/4a84e950486a007caadfb138d459833e.png, avatar=https://bu.dusays.com/2023/04/27/64496e511b09c.jpg, description=基于Butterfly主题的外挂标签 %}
+
 {% endsitegroup %}
