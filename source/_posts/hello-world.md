@@ -5,7 +5,7 @@ date: '2026-02-09T03:11:37+08:00'
 excerpt: 原版博客 LiuShen表情包收集 Hexo配置SWPP实现PWA 耗子面板和DPanel简单体验 琅環书生 云游的小项目 人潮汹涌模块修改 从Moments迁移到Ech0 仿 Heo 部分元素添加卡片式信息外框 搭建小空调页面 自定义加载动画魔改方案 安知鱼主题魔改之 index_img 兼容视频展示 开发者必备：高质量随机图 API 汇总与使用指南 告别固定背景：搭建动态随机图接口  以下为待...
 tags: []
 title: hello-world
-updated: '2026-03-08T03:45:27.865+08:00'
+updated: '2026-03-08T03:49:16.667+08:00'
 ---
 [原版博客](https://blog.liushen.fun/posts/1dfd1f41/)
 
@@ -55,6 +55,7 @@ updated: '2026-03-08T03:45:27.865+08:00'
 
 {% Akilarlxh/Tag_Plugins, 其它参数（可选） %}
 
+| {% ghcard Akilarlxh/Tag_Plugins %} | {% ghcard Akilarlxh/Tag_Plugins, theme=vue %} |
 
 
 
